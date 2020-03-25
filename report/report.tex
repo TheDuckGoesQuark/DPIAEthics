@@ -1,0 +1,164 @@
+\documentclass[12pt]{extarticle}
+
+\usepackage[utf8]{inputenc}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{graphicx}
+\newcommand\descitem[1]{\item{\bfseries #1}\\}
+
+	% Does mother know best?
+\title{%
+  Data Ethics Practical 1\\
+  \vspace{5mm} 
+  \large Discussion of Black Mirror Episode\\
+  `Arkangel' (S4E2)
+  }
+
+\author{\textit{Author}: 150008022}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Synopsis}
+
+The episode Arkangel tells the story of a Mother (Marie) and the childhood of her daughter (Sara) who is implanted with the Arkangel system after wandering off and panicking her mother at a very young age. Via a `parental hub' (a tablet device), the Arkangel system allows Marie to know her child's location, monitor her vitals, and see a live stream of Sara's vision at any time. The implant is also capable of filtering the world through augmented reality, removing any stimulation that raises the stress levels of her child such as a dog barking aggressively.
+
+While at work, a warning from the device that Sara's stress levels have increased results in Marie being notified that her father was having a stroke, and so she is able to quickly call emergency services and save his life. Sara is unaware of what was happening at the time due to the filter.
+
+As she is growing up, Sara becomes increasingly aware of the filters effect. It interferes when her friends are describing violence and gore, and we see her curiosity become strong enough that she pricks her fingers with a pencil to try and see blood. Her mother feels guilty after realising that the filter has hampered her child's emotional growth but is unable to remove the implant, and so she promises to no longer use the parental hub, and removes the filter.
+
+Sara then becomes friends with a troubled boy at her school, who after learning that she is no longer hindered by the filter exposes her to pornography and other content she was previously shielded from.
+
+As a teenager, Sara lies about her whereabouts to spend time with the troubled boy. Marie is unable to contact her and realises her daughter deception, and so re-activates the Arkangel device to discover her daughter was having sex. She does not reprimand her daughter for her dishonesty, but returns to tracking her using the device. After seeing that the boy was now introducing her daughter to narcotics, Marie approaches him at his work and threatens to report him to the police if he does not leave her daughter alone.
+
+Marie then sneaks emergency contraception into her daughters drink, which causes her to throw up at school later that day. The nurses identify the cause of the sickness, which allows Sara to realise what has happened. She finds the contraceptive packaging in her home, and then finds the Arkangel device which is activated and containing the footage of her having sex. Enraged, Sara tries to destroy the parental hub. Her mother tries to stop her, to which Sara responds by beating her with the device, the filter blurring the severe injuries she is causing. The device now broken, Sara runs away, leaving her mother looking for her in vain.
+
+\section{Technology} 
+
+As access to the internet and smart devices became ubiquitous, the demand for parental controls on these devices grew. One of the earliest examples of this need was when broadband providers began offering parental filters so that parents could restrict their kids internet access. As technology has improved and children's screen time doubled \cite{screentime}, parental control has become more powerful and has led to devices capable of providing similar functionality as the Arkangel. 
+
+The Arkangel device is essentially a neural implant parental control device. Some of its functionality, such as real time location, health metrics, and live point-of-view video streaming, can be found in incredibly non pervasive devices such as smartwatches. Moochies \cite{moochies} (and many other parental smartwatches) provide parents with GPS tracking for the child wearing the watch via an app, as well as the ability to video call and an SOS feature. Such watches have already been banned in Germany \cite{watchban}, but whether the reason for the ban was due to privacy concerns or due to the insecurity of the devices is not clear. Some models of these watches were found to be so insecure that the data held regarding every child was essentially publicly available due to a lack of verification of an authentication token \cite{smartwatchhack}. 
+
+Other similar parental control technologies include the vast suite of remote smartphone monitoring applications. For example, MSpy \cite{mspy} allows parents to track the social media usage, call logs, location, and internet usage of a connected mobile device. The software is intended to give parents peace of mind and help them identify problematic behaviour. Another application, Bark, uses machine learning to automatically detect signs of online predators, adult content, or cyberbullying \cite{bark} and alerts the parents, removing the need for manual observation.
+
+Obviously this technology can be abused, and despite being solely marketed at parents, reports of such applications being used for stalking exists. The Financial Times reported that 54\% of domestic abusers track their victims using stalkerware, which includes both these parental control applications and other more malicious and specialised tracking software \cite{stalkerware}. Installation typically requires physical access to the device, though despite efforts from Apple removing such applications from the App store due to privacy concerns , can be installed easily from the web by exploiting a vulnerability with iCloud \cite{appleremove}. 
+
+Feal, Fajardo, and Manuel \cite{study} investigated the privacy features of these applications and if users were made aware of how their data was being treated. From the applications surveyed, half did not make it clear if their child's data was being stored on third party servers. Many also exhibited behaviours that could be considered unexpected, such as sending the entire text message history to the application server, rather than only sending those that arrive once the software is activated on the device. Some data was also found to be being sent to a third party before informing the user of the privacy policy.
+
+Such applications are able to filter content on the child's device, but the ability to remotely see and filter the child's experience of the world (and especially via a method as non-pervasive as a brain implant) is the most futuristic feature of the Arkangel system. Brain-computer interfaces (BCIs) are currently a popular area of research, which means that some of the functionality provided by the Arkangel brain implant can currently be attempted. A common approach involves using readings from an electroencephalograph (EEG) which map to signals produced by the brain in response to different stimuli or thoughts. For example, Kapoor, Shenoy, and Tan \cite{brainclass} have produced a classifier that can use signals from an EEG to determine what object someone is currently looking at. 
+
+In the episode, a rise in cortisol levels are used to determine when the child is stressed and triggers the augmented reality filtering. Parlak et al. were able to create a wearable device capable of measuring cortisol levels just as effectively as a laboratory test. The original intention of such wearable technology was to help care for the elderly and speed up the diagnosis of possible illnesses. However, health insurance providers are often a third party consumer of the data that is produced by fitness tracking wearables as they can use it when determining prices for their customers \cite{healthinsurance}. 
+
+Wearables for children have also been used to help those with autism improve their social skills. For example, the camera provided by Google Glass has been used to detect the emotions of whoever the child is currently speaking to and provide an audio cue to the wearer of what their expression means (e.g. sadness, excitement) \cite{medscape_2019}. The social interactions are recorded and the data is stored in a remote database so that it can also be reviewed at a later time. Awake Labs are also working on a technology that draws even closer to the Arkangel device. By combining health tracking wearables like those previously discussed, they hope to be able to pre-emptively detect meltdowns caused by overstimulation, and communicate when such an event seems likely to parents or carers \cite{burns_2016}.
+
+\section{Pros and Cons}
+
+\subsection{Health Monitoring}
+
+The episode captures some of the benefits and drawbacks that technology like the Arkangel would provide to society. For example, during the induction process, the device is able to detect an iron deficiency which the parent could then combat by changing the child's diet (Figure \ref{fig:vitals}). This information would make dietary problems clearer to parents, ensuring children are healthy, possibly solving the issue of global malnutrition at least in developed countries where the technology was available \cite{malnutrition}. The device could also detect other illnesses like diabetes or heart problems so that they could be treated early on. The SOS feature could protect children that are victims of abuse by allowing for quick and simple contact with emergency services.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\linewidth]{images/vitals}
+	\caption{Vitals view from the parental hub with the iron deficiency highlighted \cite{arkangel}.} 
+	\label{fig:vitals}
+\end{figure}
+
+Though in the episode, the grandfather's stroke is indirectly detected by a stress increase in the child, if the Arkangel device was also given to the elderly and vulnerable it could allow for more efficient care facilities and quicker response times to incidents. Given the popularity of personal health tracking devices nowadays, it would also be likely that the Arkangel device would be used to allow people to monitor their own vitals for diet or training purposes. 
+
+These applications raise many of the same issues as modern day health trackers: is the data being processed by a third party, is the data secured in storage and in transit, can the device be abused in any way, how reliable are the readings? In the case of the elderly, the discreteness of the device means that those suffering from illnesses such as dementia may forget if they are being monitored remotely. Bowes et al. \cite{forget} describe this as a transition into covert monitoring, i.e. the consent of the patient would require renewing. 
+
+As mentioned earlier, health data from wearable devices is already being used by health insurance companies to determine what to charge customers based on their risk of illness. Some insurers are even making it mandatory that customers provide the data from their personal health tracking wearables \cite{dans_2018}. Though this benefits the insurers and those that show low risk of illness, it may result in high risk patients being denied the financial support they need. 
+
+The technology could also alter the typical relationship between parent and child. Lupton and Williamson discuss \cite{datafied_child} how the analytics provided by devices such as the Arkangel could result in parents relying on metrics to maintain their child as though they were a machine. Children may feel like they do not have a voice as their attempts to verbalise their own feelings would be ignored in favour of the interpretation made by the device. Ghosh et al. analysed responses from teens on parental control applications on the Google Play store and noted that many felt that the applications were damaging the relationship with their parents \cite{children_on_tracking}.
+
+\subsection{Location and Point-of-View Video Streaming}
+
+Location tracking is already available to parents, and point-of-view video streaming could be provided by wearable devices. These features could help find children who go missing, and give parents peace of mind as they would be able to check that the friends, teachers, and carers for their child are treating them well. Elderly found to be `wandering' can be tracked easily, or helped remotely as is done with the app `Be My eyes' \cite{bemyeyes}. 
+
+However, the device pays no attention to the privacy preferences of those the child interacts with. Though CCTV is ubiquitous in many countries, and emergency service staff carry body cameras, it would not be as clear to tell if your interaction with a child is being relayed to their parent or some other third party. This could result in a chilling effect \cite{penney_2017}, where teachers are afraid to discipline children in any way out of fear that the parent would disagree with their means of doing so. On the other hand, if it is known that the child has the implant, they may be alienated from their peers that would rather not have their interactions recorded.
+
+This chilling effect could reduce anti-social behaviour in children (or anyone using the device) as they would know their actions are being recorded. If the data was made available to police or government agencies, then crime rates might decrease and incorrect accusations could be eliminated as the video evidence of a persons every action would exist. The mass surveillance implemented in China could be considered comparable to this use case, where jaywalkers and murderers can be identified, tracked, and footage of their crime likely recorded \cite{mozur_2018}.
+
+Those being tracked may also be frustrated knowing they are never truly `alone', or that they can be held accountable for every action ranging from singing in the shower to gossiping about others. Current parental location tracking devices do not suffer from this issue, as the devices are limited by their battery life, or can even be removed. An implant such as the Arkangel device however does not share this feature.
+
+\subsection{Real-Time Content Filter}
+
+The cultural norm in most societies is that children should be slowly exposed to the dangers and upsetting parts of life. Statistics show that childhood trauma often produces unstable adults, who suffer from depression and anxiety \cite{trauma}, as well as being more likely to suffer from substance abuse \cite{drugs}. This link has been attributed to how the parts of the brain that regulate oxytocin production and emotions in general are affected by both positive and negative experiences early in life. 
+
+This might suggest that the Arkangel system would be wholly beneficial for children if never deactivated. However, Hanswijck de Jonge points out that this can result in children unable to cope with the stress of the real world when they are eventually exposed to it \cite{parent_2018}. Children can become frustrated and aggressive; these emotions triggered by the lack of agency in their own lives. This phenomenon is shown during the episode, where we see the child self harm in an attempt to experience what the filter does not let them see, and then later attack their mother when they realise how much she had interfered with their lives. 
+
+The device seems to have no simple way to be removed, giving parents the ability to censor and monitor their child's life indefinitely. In the episode, we see how the mother betrays the trust of her daughter by monitoring her without consent after promising to no longer use the device. If we consider that not only parents could have access to the Arkangel implant, but governments or malicious hackers, it becomes clear that someone having control of what you can see could be problematic. For example, governments could use the filter to censor any negative information about them under the guise of protecting citizens from unpleasant content. 
+
+The implants ability to alter someone's perception of the world could also lead to even more intrusive advertising. Alternatively, it could also provide immersive entertainment beyond the capabilities of virtual reality headsets.
+
+\section{Regulatory Modalities}
+
+% Who is (potentially) negatively impacted?
+% Kids - lack of consent, no control over their own fate/experience of the world
+% Parents - 
+% Elderly - 
+% 
+
+\subsection{Code/Architecture}
+
+The lack of control the implantee has over when they are being tracked is the primary issue with the design of the Arkangel system. This could be mitigated by the developers providing a method for the implantee to deactivate the device or some features of it. When discussing the issue of `sharenting' - where parents publish images and videos of their children without their consent - a study by the Children's Commissioner found that many children did not like their parent controlling their private information, but felt helpless to stop them \cite{lifeinlikes}. A secondary device that allowed the child to toggle when their location or point-of-view video stream was available to the parent (or any party tracking them) could partially resolve this. 
+
+This would not remove the ability for the parent to control the content filters on the child's experience of life, but could instead encourage discussion between both parties about why such filters are beneficial for the child. The process could be considered analogous to a parent covering the child's eyes if inappropriate content is shown on a television: the child can avoid the filter, but chooses not to as they understand the parents intentions, or even ask what they are being protected from. This way, when they are exposed to it, it is less of a shock.
+
+A potential downfall of this system would be if someone else gained physical access to the controlling device. The ability to secure the device using biometrics are a plausible solution, but would require that the developers account for situations such as the child being forced to unlock the device. 
+
+To protect those with memory loss from the covert monitoring discussed earlier, the device could ensure renewed consent through regular requests to review current permissions. How often these requests occur could be configurable by the user to allow them to limit the intervals to their preference.
+
+Given parents would become reliant on the device to determine the health of their child, the developers would need to ensure that the readings from their device are reliable. If over-sensitive, parents may seek medical attention when it is unnecessary. Prgomet et al. found when investigating the attitudes of medical professionals towards continuous monitoring technology that an increase in inappropriate escalations were triggered by the it \cite{missed}. Incorrect readings could also result in treatment that did more harm than good.
+
+The data that could be collected from these devices could aid medical research and improve the devices, but on the other hand could have consequences for the user if not handled properly. Apple have already found an approach which involves two separate platforms to allow users to share health data from their devices with either researchers (ResearchKit) or other applications (HealthKit) \cite{healthkit}. Anonymisation of the data being communicated via either platform could help preserve the privacy of users, while still allow progress to be made. The anonymisation process would need to be sophisticated enough to stop techniques such as cross referencing with other sources being able to de-anonymise the data, which is a problem currently being tackled \cite{crossref}.
+
+\subsection{Market}
+
+In the episode, Sara is entered into a free trial of the Arkangel as an early tester, and so we are not given an idea of how it is priced. Regardless, any price would put such a device out of reach of lower income families. Robeznieks points out how this discrimination already exists because those who can afford fitness tracking wearables are eligible for cheaper health insurance \cite{ama2019}. Another likely solution would be for users of the device to `sell' the data recorded by the device instead of paying for the device directly. This model effectively forces those in poverty to sacrifice their privacy for their health. 
+
+Instead, we should consider solutions that do not remove power from the less well off. When discussing how governments can help regulate behaviour through manipulating market forces, Lessig describes how child care subsidies reduce the constraints of raising children \cite{lessig}. Therefore by subsidising the cost of the Arkangel devices, more of the population would be able to afford them. The cost of these subsidies would easily be offset by the reduced load on health services, and on police due to less cases of missing children. The long term benefits to improving the availability of healthcare according to a report from the European Health Management Association include a reduction in poverty and social exclusion \cite{healtheffects}.
+
+\subsection{Law}
+
+Currently, the U.S department of Health \& Human Services applies different constraints on health data that is collected in the context of a hospital to that which is collected from wearable fitness trackers \cite{health_privacy}. The former is considered health data, and the latter is consumer data. The line between these two concepts would likely need to be revised given the existence of technology such as Arkangel. Given the depth of knowledge that such a device would hold, and that improvements would likely lead to it providing early diagnosis without the need for a medical professional, the device becomes a borderline digital doctor. Therefore, it makes sense that the same legal frameworks in place to protect patient-doctor confidentiality should be in place for Arkangel. For example, currently doctors in the UK are only able to provide an incredibly limited version of a patients medical history to insurance companies, and any other details can only be shared with the patients consent \cite{doctor}.
+
+For the children implanted with the device, consent is a concept that will need revised. Gligorijevi\'{c} points out that the law currently favours parental control rather than the privacy rights of children \cite{children_privacy}. This is based on an assumption that parents will always perform in the best interests of the child, but in the article she discusses how many parents fail their child in this respect. Given this contradiction, and the fact that the Convention on the Rights of the Child states that:
+
+\begin{quote}
+\centering
+"In all actions concerning children, ...  , the best interests of the child shall be a primary consideration." \cite{article3}
+\end{quote}
+
+there is a need for laws that clearly define the privacy rights of the child, separate from the rights of the parents. The European Convention on Human Rights is written to be applied universally, regardless of age or gender. However Gligorijevi\'{c} goes on to say that article 8 (the right to respect for private and family life, home and correspondence \cite{article8}) weakens the rights of the child due to the dependence on the parents wishes. Steinberg recognises existing and proposes new solutions to this problem \cite{steinberg}. For example, due to the nature of children to "self-reveal before they self-reflect" \cite{selfreveal}, California codified the right for children to delete anything they post to social media if they later change their mind. This model, coupled with the 'Right to be Forgotten' of the Data Privacy Directive, could allow children (once matured) to request deletion of any data from their childhood. Steinberg also advocates for parents and children to be better educated about privacy so that they consider it in their daily lives.
+
+The privacy of the implantee is not the only instance we must consider. Everyone they interact with will be recorded by the device via the point-of-view video stream. In the UK, it is not illegal to record a conversation in secret if it is for personal use \cite{recording}, but in the case of the Arkangel, it is difficult to determine who exactly is performing the recording. If we assume that the recordings remain within the confines of the parent and child (i.e. no other third party has access to the recordings), then the privacy of whatever establishment they are in also needs to be respected. For example, if you are in someone else's home and they ask for you not to record, the use of the Arkangel device then becomes trespassing \cite{trespassing}. Laws requiring that such requests are respected would need to be in place in order to deter people from covertly recording others.
+
+In the episode, the mother threatens to use the recordings from the device to incriminate someone. There are consequences for allowing this use of the covertly recorded footage and for not. If considered legal, then the chilling effect mentioned earlier would be prominent. The number of cases where such footage could quickly provide the honest truth and ensure justice may justify this sousveillance. Alternatively, the social tension and global loss of privacy resulting from constantly being recorded by everyone you meet might not be worth it.
+
+\subsection{Social Norms}
+
+In the episode, we see that the child implanted with the device is alienated from her friends because of it. Knowing that her friends had more freedoms than her, the child acted out against them. A study by the European Commission found that coordination between the parents of children regarding rules on the use of digital technology resulted in children who did not argue against these rules \cite{youngchildren}. This methodology could be applied to Arkangel, where parents could agree the level of filtering their children should receive to remove social friction. This would also encourage discussion between parents and likely influences their judgement, avoiding parents using the filters innappropriately.
+
+It is also likely that the Arkangel will need to be given some visible presence on the bearer so that those around know they are using the device. Any kind of signal to let others know whether or not they are being recorded could help build trust. For example, during conversation if someone wishes to divulge personal information with another who is using the device, they could request that they stop recording and be given a clear physical cue (like a small blinking LED stopping) that the request has been fufilled.
+
+\section{Opinion}
+
+When initially researching the technology, I held the opinion that such a device would be overall beneficial to society with some limitations applied. I believed that the modality of code and the solutions proposed earlier could stop the ethical issues raised by such a device. 
+
+I fully believe that children should be protected from the many horrors of life, and understand that so many irrational fears are driven by traumatic experiences from childhood. However, a common theme found when researching parental control devices was how they weakened trust, and how they mostly delivered short-term relief for the parents. Research from the American College of Neuropsychopharmacology was able to show that even in stressful environment, the physical and positive presence of a parent reduced what children interpreted as threats \cite{sciencedaily_2018}. Given the device cannot actually protect the child from harm, I do not see what benefit it delivers over simply spending time with your child and teaching them to be careful through example.
+
+So many of the solutions regarding the four modalities relied on people agreeing on what is right for their child, and given how much this can vary between parents never mind within communities makes this a lofty goal. Our failure to secure child wearables even when we know that the privacy of the child is crucial does not bode well for something such as Arkangel. Subcomponents of the technology such as the health monitoring features could be beneficial for society by helping guide healthy diets or detect ilnness early. Nevertheless, with the myriad of privacy issues, the abundance of ways the technology could be abused, and the lack of actual benefits it would deliver to society, I no longer believe Arkangel is an ethical technology.
+
+\bibliographystyle{unsrt}
+\bibliography{mybib}
+
+\textit{Word Count: 4414}
+
+\end{document}
+
