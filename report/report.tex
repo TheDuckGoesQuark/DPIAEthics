@@ -32,7 +32,7 @@
 \usepackage[toc,page]{appendix}
 \usepackage[hidelinks]{hyperref}
 
- %%%%%%%%%%%%  Set Depths for Sections  %%%%%%%%%%%%%%
+%%%%%%%%%%%%  Set Depths for Sections  %%%%%%%%%%%%%%
 
 % 1) Section
 % 1.1) SubSection
@@ -45,7 +45,7 @@
 \setcounter{secnumdepth}{5}
 
 
- %%%%%%%%%%%%  Set Depths for Nested Lists created by \begin{enumerate}  %%%%%%%%%%%%%%
+%%%%%%%%%%%%  Set Depths for Nested Lists created by \begin{enumerate}  %%%%%%%%%%%%%%
 
 
 \setlistdepth{9}
@@ -84,75 +84,104 @@
 
 \date{\today}
 
+
 \begin{document}
 
 \maketitle
+\thispagestyle{empty}
+
+\vfill
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width = 4.5cm]{images/standrewslogo.png}
+\end{figure}
+\vfill
+
+\begin{quote}
+    \centering
+    \large{ "There is only one way at the end of the day to make technology better and that is to use it" 
+    \par\emph{Brad Smith, Microsoft President, 2020}}
+\end{quote}
 
 \newpage
+\pagenumbering{arabic}
 
 \part{DPIA}
 
-\begin{figure}[H]
-\advance\leftskip 8.82in		\includegraphics[width=1.88in,height=1.31in]{./images/image1.jpeg}
-\end{figure}
+% In Step 1 you should describe your case study, and why it meets the requirements in Article 35(3).
 
+\section*{Step 1: Identify the need for a DPIA} 
 
-%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 Ends here %%%%%%%%%%%%%%%%%%%%
+\begin{table}[H] 
+\centering 
+\begin{tabular}{p{\linewidth}} 
+\hline %row no:1 
+    \multicolumn{1}{|p{\linewidth}|}{Explain broadly what project aims to achieve and what type of processing it involves. You may find it helpful to refer or link to other documents, such as a project proposal. Summarise why you identified the need for a DPIA.} \\ 
+\hhline{-} %row no:2 
+\multicolumn{1}{|p{\linewidth}|}{} \\ 
+\hhline{-} 
+\end{tabular} 
+\end{table} 
 
-\subsection*{Sample DPIA template}
-\addcontentsline{toc}{subsection}{Sample DPIA template}
+\section*{Step 2: Describe the processing} 
 
+%%%%%%%%%%%%%%%%%%%% Table No: 3 starts here %%%%%%%%%%%%%%%%%%%% 
+\begin{table}[H] 
+\centering 
+\begin{tabular}{p{\linewidth}} 
+\hline %row no:1 
+\multicolumn{1}{|p{\linewidth}|}{
+\textbf{Describe the nature of the processing: }how will you collect, use, store and delete data? What is the source of the data? Will you be sharing data with anyone? You might find it useful to refer to a flow diagram or other way of describing data flows. What types of processing identified as likely high risk are involved?} \\ 
+\hhline{-} %row no:2 
+\multicolumn{1}{|p{\linewidth}|}{
+
+} \\ 
+\hhline{-} 
+\end{tabular} 
+\end{table} 
+%%%%%%%%%%%%%%%%%%%% Table No: 3 ends here %%%%%%%%%%%%%%%%%%%% 
+
+\vspace{\baselineskip} 
+%%%%%%%%%%%%%%%%%%%% Table No: 4 starts here %%%%%%%%%%%%%%%%%%%% 
+\begin{table}[H] 
+\centering 
+\begin{tabular}{p{\linewidth}} 
+\hline %row no:1 
+\multicolumn{1}{|p{\linewidth}|}{
+\textbf{Describe the scope of the processing: }what is the nature of the data, and does it include special category or criminal offence data? How much data will you be collecting and using? How often? How long will you keep it? How many individuals are affected? What geographical area does it cover?} \\ 
+\hhline{-} %row no:2 
+\multicolumn{1}{|p{\linewidth}|}{} \\ 
+\hhline{-} 
+\end{tabular} 
+\end{table} 
+%%%%%%%%%%%%%%%%%%%% Table No: 4 ends here %%%%%%%%%%%%%%%%%%%% 
+\vspace{\baselineskip} 
+%%%%%%%%%%%%%%%%%%%% Table No: 5 starts here %%%%%%%%%%%%%%%%%%%% 
+\begin{table}[H] 
+\centering 
+\begin{tabular}{p{\linewidth}} 
+\hline %row no:1 
+\multicolumn{1}{|p{\linewidth}|}{
+\textbf{Describe the context of the processing: }what is the nature of your relationship with the individuals? How much control will they have? Would they expect you to use their data in this way? Do they include children or other vulnerable groups? Are there prior concerns over this type of processing or security flaws? Is it novel in any way? What is the current state of technology in this area? Are there any current issues of public concern that you should factor in? Are you signed up to any approved code of conduct or certification scheme (once any have been approved)?} \\ 
+\hhline{-} %row no:2 
+\multicolumn{1}{|p{\linewidth}|}{} \\ 
+\hhline{-} 
+\end{tabular} 
+\end{table} 
+%%%%%%%%%%%%%%%%%%%% Table No: 5 ends here %%%%%%%%%%%%%%%%%%%% 
 \vspace{\baselineskip}
-
-\vspace{\baselineskip}
-This template is an example of how you can record your DPIA process and outcome. It follows the process set out in our DPIA guidance, and should be read alongside that guidance and the \href{http://ec.europa.eu/newsroom/document.cfm?doc_id=47711}{Criteria for an acceptable DPIA} set out in European guidelines on DPIAs. \par
-
-
-\vspace{\baselineskip}
-You should start to fill out the template at the start of any major project involving the use of personal data, or if you are making a significant change to an existing process. The final outcomes should be integrated back into your project plan.\par
-
-
-\vspace{\baselineskip}
-\section*{Submitting controller details}
-\addcontentsline{toc}{section}{Submitting controller details}
-
-\begin{table}[h]
-\centering
-\begin{tabular}{ll}
-\hline
-%row no:1
-\multicolumn{1}{|p{3.27in}}{Name of controller} & 
-\multicolumn{1}{|p{3.27in}|}{} \\
-\hhline{--}
-%row no:2
-\multicolumn{1}{|p{3.27in}}{Subject/title of DPO } & 
-\multicolumn{1}{|p{3.27in}|}{} \\
-\hhline{--}
-%row no:3
-\multicolumn{1}{|p{3.27in}}{Name of controller contact /DPO  \par (delete as appropriate)} & 
-\multicolumn{1}{|p{3.27in}|}{} \\
-\hhline{--}
-
-\end{tabular}
- \end{table}
-
-
-
-\vspace{\baselineskip} \section*{Step 1: Identify the need for a DPIA} \addcontentsline{toc}{section}{Step 1: Identify the need for a DPIA} %%%%%%%%%%%%%%%%%%%% Table No: 2 starts here %%%%%%%%%%%%%%%%%%%% \begin{table}[H] \centering \begin{tabular}{p{6.74in}} \hline %row no:1 \multicolumn{1}{|p{6.74in}|}{Explain broadly what project aims to achieve and what type of processing it involves. You may find it helpful to refer or link to other documents, such as a project proposal. Summarise why you identified the need for a DPIA.} \\ \hhline{-} %row no:2 \multicolumn{1}{|p{6.74in}|}{} \\ \hhline{-} \end{tabular} \end{table} %%%%%%%%%%%%%%%%%%%% Table No: 2 ends here %%%%%%%%%%%%%%%%%%%% \vspace{\baselineskip} \setlength{\parskip}{6.0pt} \setlength{\parskip}{9.96pt} \section*{Step 2: Describe the processing} \addcontentsline{toc}{section}{Step 2: Describe the processing} %%%%%%%%%%%%%%%%%%%% Table No: 3 starts here %%%%%%%%%%%%%%%%%%%% \begin{table}[H] \centering \begin{tabular}{p{6.74in}} \hline %row no:1 \multicolumn{1}{|p{6.74in}|}{\textbf{Describe the nature of the processing: }how will you collect, use, store and delete data? What is the source of the data? Will you be sharing data with anyone? You might find it useful to refer to a flow diagram or other way of describing data flows. What types of processing identified as likely high risk are involved?} \\ \hhline{-} %row no:2 \multicolumn{1}{|p{6.74in}|}{} \\ \hhline{-} \end{tabular} \end{table} %%%%%%%%%%%%%%%%%%%% Table No: 3 ends here %%%%%%%%%%%%%%%%%%%% \vspace{\baselineskip} %%%%%%%%%%%%%%%%%%%% Table No: 4 starts here %%%%%%%%%%%%%%%%%%%% \begin{table}[H] \centering \begin{tabular}{p{6.74in}} \hline %row no:1 \multicolumn{1}{|p{6.74in}|}{\textbf{Describe the scope of the processing: }what is the nature of the data, and does it include special category or criminal offence data? How much data will you be collecting and using? How often? How long will you keep it? How many individuals are affected? What geographical area does it cover?} \\ \hhline{-} %row no:2 \multicolumn{1}{|p{6.74in}|}{} \\ \hhline{-} \end{tabular} \end{table} %%%%%%%%%%%%%%%%%%%% Table No: 4 ends here %%%%%%%%%%%%%%%%%%%% \vspace{\baselineskip} %%%%%%%%%%%%%%%%%%%% Table No: 5 starts here %%%%%%%%%%%%%%%%%%%% \begin{table}[H] \centering \begin{tabular}{p{6.74in}} \hline %row no:1 \multicolumn{1}{|p{6.74in}|}{\textbf{Describe the context of the processing: }what is the nature of your relationship with the individuals? How much control will they have? Would they expect you to use their data in this way? Do they include children or other vulnerable groups? Are there prior concerns over this type of processing or security flaws? Is it novel in any way? What is the current state of technology in this area? Are there any current issues of public concern that you should factor in? Are you signed up to any approved code of conduct or certification scheme (once any have been approved)?} \\ \hhline{-} %row no:2 \multicolumn{1}{|p{6.74in}|}{} \\ \hhline{-} \end{tabular} \end{table} %%%%%%%%%%%%%%%%%%%% Table No: 5 ends here %%%%%%%%%%%%%%%%%%%% \vspace{\baselineskip}
-
-
 %%%%%%%%%%%%%%%%%%%% Table No: 6 starts here %%%%%%%%%%%%%%%%%%%%
 
 
 \begin{table}[H]
  			\centering
-\begin{tabular}{p{6.74in}}
+\begin{tabular}{p{\linewidth}}
 \hline
 %row no:1
-\multicolumn{1}{|p{6.74in}|}{\textbf{Describe the purposes of the processing: }what\ do you want to achieve? What is the intended effect on individuals? What are the benefits of the processing – for  you, and more broadly? } \\
+\multicolumn{1}{|p{\linewidth}|}{\textbf{Describe the purposes of the processing: }what\ do you want to achieve? What is the intended effect on individuals? What are the benefits of the processing – for  you, and more broadly? } \\
 \hhline{-}
 %row no:2
-\multicolumn{1}{|p{6.74in}|}{} \\
+\multicolumn{1}{|p{\linewidth}|}{} \\
 \hhline{-}
 
 \end{tabular}
@@ -170,13 +199,13 @@ You should start to fill out the template at the start of any major project invo
 
 \begin{table}[H]
  			\centering
-\begin{tabular}{p{6.74in}}
+\begin{tabular}{p{\linewidth}}
 \hline
 %row no:1
-\multicolumn{1}{|p{6.74in}|}{\textbf{Consider how to consult with relevant stakeholders: }describe when and how you will seek individuals’ views – or justify why it’s not appropriate to do so. Who else do you need to involve within your organisation? Do you need to ask your processors to assist? Do you plan to consult information security experts, or any other experts?} \\
+\multicolumn{1}{|p{\linewidth}|}{\textbf{Consider how to consult with relevant stakeholders: }describe when and how you will seek individuals’ views – or justify why it’s not appropriate to do so. Who else do you need to involve within your organisation? Do you need to ask your processors to assist? Do you plan to consult information security experts, or any other experts?} \\
 \hhline{-}
 %row no:2
-\multicolumn{1}{|p{6.74in}|}{} \\
+\multicolumn{1}{|p{\linewidth}|}{} \\
 \hhline{-}
 
 \end{tabular}
@@ -196,13 +225,13 @@ You should start to fill out the template at the start of any major project invo
 
 \begin{table}[H]
  			\centering
-\begin{tabular}{p{6.74in}}
+\begin{tabular}{p{\linewidth}}
 \hline
 %row no:1
-\multicolumn{1}{|p{6.74in}|}{\textbf{Describe compliance and proportionality measures, in particular:} what is your lawful basis for processing? Does the processing actually achieve your purpose? Is there another way to achieve the same outcome? How will you prevent function creep? How will you ensure data quality and data minimisation? What information will you give individuals? How will you help to support their rights? What measures do you take to ensure processors comply? How do you safeguard any international transfers?} \\
+\multicolumn{1}{|p{\linewidth}|}{\textbf{Describe compliance and proportionality measures, in particular:} what is your lawful basis for processing? Does the processing actually achieve your purpose? Is there another way to achieve the same outcome? How will you prevent function creep? How will you ensure data quality and data minimisation? What information will you give individuals? How will you help to support their rights? What measures do you take to ensure processors comply? How do you safeguard any international transfers?} \\
 \hhline{-}
 %row no:2
-\multicolumn{1}{|p{6.74in}|}{} \\
+\multicolumn{1}{|p{\linewidth}|}{} \\
 \hhline{-}
 
 \end{tabular}
@@ -253,7 +282,7 @@ You should start to fill out the template at the start of any major project invo
 \begin{tabular}{p{0.99in}p{2.53in}p{0.83in}p{0.79in}p{0.79in}}
 \hline
 %row no:1
-\multicolumn{5}{|p{\dimexpr6.74in+8\tabcolsep\relax}|}{\textbf{Identify additional measures you could take to reduce or eliminate risks identified as medium or high risk in step 5}} \\
+\multicolumn{5}{|p{\dimexpr\linewidth+8\tabcolsep\relax}|}{\textbf{Identify additional measures you could take to reduce or eliminate risks identified as medium or high risk in step 5}} \\
 \hhline{-----}
 %row no:2
 \multicolumn{1}{|p{0.99in}}{\textbf{Risk }} & 
@@ -310,7 +339,7 @@ You should start to fill out the template at the start of any major project invo
 \multicolumn{1}{|p{2.33in}|}{{\fontsize{10pt}{12.0pt}\selectfont DPO should advise on compliance, step 6 measures and whether processing can proceed}} \\
 \hhline{---}
 %row no:5
-\multicolumn{3}{|p{\dimexpr6.74in+4\tabcolsep\relax}|}{Summary of DPO advice:} \\
+\multicolumn{3}{|p{\dimexpr\linewidth+4\tabcolsep\relax}|}{Summary of DPO advice:} \\
 \hhline{---}
 %row no:6
 \multicolumn{1}{|p{1.84in}}{DPO advice accepted or overruled by:} & 
@@ -318,7 +347,7 @@ You should start to fill out the template at the start of any major project invo
 \multicolumn{1}{|p{2.33in}|}{{\fontsize{10pt}{12.0pt}\selectfont If overruled, you must explain your reasons}} \\
 \hhline{---}
 %row no:7
-\multicolumn{3}{|p{\dimexpr6.74in+4\tabcolsep\relax}|}{Comments:} \\
+\multicolumn{3}{|p{\dimexpr\linewidth+4\tabcolsep\relax}|}{Comments:} \\
 \hhline{---}
 %row no:8
 \multicolumn{1}{|p{1.84in}}{Consultation responses reviewed by:} & 
@@ -326,7 +355,7 @@ You should start to fill out the template at the start of any major project invo
 \multicolumn{1}{|p{2.33in}|}{{\fontsize{10pt}{12.0pt}\selectfont If your decision departs from individuals’ views, you must explain your reasons}} \\
 \hhline{---}
 %row no:9
-\multicolumn{3}{|p{\dimexpr6.74in+4\tabcolsep\relax}|}{Comments:} \\
+\multicolumn{3}{|p{\dimexpr\linewidth+4\tabcolsep\relax}|}{Comments:} \\
 \hhline{---}
 %row no:10
 \multicolumn{1}{|p{1.84in}}{This DPIA will kept under review by:} & 
