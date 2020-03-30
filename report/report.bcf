@@ -1998,6 +1998,8 @@
     <bcf:citekey order="1">face</bcf:citekey>
     <bcf:citekey order="2">facefirst</bcf:citekey>
     <bcf:citekey order="3">EUdataregulations2018</bcf:citekey>
+    <bcf:citekey order="4">patrickfarley</bcf:citekey>
+    <bcf:citekey order="5">documentation</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
