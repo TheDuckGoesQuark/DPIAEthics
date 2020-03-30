@@ -2,77 +2,19 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{url}
-\usepackage{cite}
 \usepackage{graphicx}
 \usepackage{amsmath}
-\usepackage{latexsym}
-\usepackage{amsfonts}
-\usepackage[normalem]{ulem}
-\usepackage{soul}
-\usepackage{array}
-\usepackage{amssymb}
-\usepackage{subfig}
-\usepackage{wrapfig}
-\usepackage{wasysym}
-\usepackage{enumitem}
-\usepackage{adjustbox}
-\usepackage{ragged2e}
-\usepackage[svgnames,table]{xcolor}
-\usepackage{tikz}
-\usepackage{longtable}
-\usepackage{changepage}
-\usepackage{setspace}
 \usepackage{hhline}
 \usepackage{multicol}
-\usepackage{tabto}
 \usepackage{float}
-\usepackage{multirow}
-\usepackage{makecell}
-\usepackage{fancyhdr}
-\usepackage[toc,page]{appendix}
-\usepackage[hidelinks]{hyperref}
+\usepackage[
+    urldate=long,
+    sorting=none
+]{biblatex}
+\addbibresource{mybib.bib}
 
-%%%%%%%%%%%%  Set Depths for Sections  %%%%%%%%%%%%%%
-
-% 1) Section
-% 1.1) SubSection
-% 1.1.1) SubSubSection
-% 1.1.1.1) Paragraph
-% 1.1.1.1.1) Subparagraph
-
-
-\setcounter{tocdepth}{5}
-\setcounter{secnumdepth}{5}
-
-
-%%%%%%%%%%%%  Set Depths for Nested Lists created by \begin{enumerate}  %%%%%%%%%%%%%%
-
-
-\setlistdepth{9}
-\renewlist{enumerate}{enumerate}{9}
-		\setlist[enumerate,1]{label=\arabic*)}
-		\setlist[enumerate,2]{label=\alph*)}
-		\setlist[enumerate,3]{label=(\roman*)}
-		\setlist[enumerate,4]{label=(\arabic*)}
-		\setlist[enumerate,5]{label=(\Alph*)}
-		\setlist[enumerate,6]{label=(\Roman*)}
-		\setlist[enumerate,7]{label=\arabic*}
-		\setlist[enumerate,8]{label=\alph*}
-		\setlist[enumerate,9]{label=\roman*}
-
-\renewlist{itemize}{itemize}{9}
-		\setlist[itemize]{label=$\cdot$}
-		\setlist[itemize,1]{label=\textbullet}
-		\setlist[itemize,2]{label=$\circ$}
-		\setlist[itemize,3]{label=$\ast$}
-		\setlist[itemize,4]{label=$\dagger$}
-		\setlist[itemize,5]{label=$\triangleright$}
-		\setlist[itemize,6]{label=$\bigstar$}
-		\setlist[itemize,7]{label=$\blacklozenge$}
-		\setlist[itemize,8]{label=$\prime$}
-
-
-\newcommand\descitem[1]{\item{\bfseries #1}\\}
+\setlength{\tabcolsep}{0.5em} % for the horizontal padding
+{\renewcommand{\arraystretch}{1.2}% for the vertical padding
 
 \title{%
   Data Ethics Practical 3\\
@@ -116,9 +58,19 @@
 \centering 
 \begin{tabular}{p{\linewidth}} 
 \hline %row no:1 
-    \multicolumn{1}{|p{\linewidth}|}{Explain broadly what project aims to achieve and what type of processing it involves. You may find it helpful to refer or link to other documents, such as a project proposal. Summarise why you identified the need for a DPIA.} \\ 
+\multicolumn{1}{|p{\linewidth}|}{Explain broadly what project aims to achieve and what type of processing it involves. You may find it helpful to refer or link to other documents, such as a project proposal. Summarise why you identified the need for a DPIA.} \\ 
 \hhline{-} %row no:2 
-\multicolumn{1}{|p{\linewidth}|}{} \\ 
+\multicolumn{1}{|p{\linewidth}|}{
+    General purpose facial recognition software allows for individuals to be identified in images. 
+Microsofts' general purpose Face software can also extract features such as age, emotion, gender, pose, smile, and facial hair \cite{face}. 
+Images can be cross referenced to determine if the same person appears in them, and emotions can be detected based on facial features.
+West provides a compilation of current and future applications for facial recognition\cite{facefirst}, which range from unlocking mobile devices to identifying and finding missing children.
+These features require an assessment of the impact of the envisaged processing operations on the protection of personal data, as they meet the following requirements of Article 35(3) \cite{EUdataregulations2018}:
+    \begin{itemize}
+            \item Article 35(3)(a) applies as the facial recognition software attempts to profile individuals based on their appearance. The results of this profiling will likely be used to make decisions that affect the individual being profiled.
+            \item Article 35(3)(c) applies as one of the use cases touted by Microsoft is `count people in a space for crowd control', which would require systematic monitoring of a publicly accessible area on a large scale.
+    \end{itemize}
+} \\ 
 \hhline{-} 
 \end{tabular} 
 \end{table} 
@@ -248,20 +200,20 @@
 
 
 \begin{table}[H]
- 			\centering
-\begin{tabular}{p{3.91in}p{0.78in}p{0.76in}p{0.68in}}
+\centering
+\begin{tabular}{p{0.55\linewidth}p{0.15\linewidth}p{0.15\linewidth}p{0.15\linewidth}}
 \hline
 %row no:1
-\multicolumn{1}{|p{3.91in}}{\textbf{Describe source of risk and nature of potential impact on individuals. }Include associated compliance and corporate risks\textbf{ }as necessary. } & 
-\multicolumn{1}{|p{0.78in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Likelihood of harm}}} & 
-\multicolumn{1}{|p{0.76in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Severity of harm}}} & 
-\multicolumn{1}{|p{0.68in}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Overall risk }}} \\
+\multicolumn{1}{|p{0.55\linewidth}}{\textbf{Describe source of risk and nature of potential impact on individuals. }Include associated compliance and corporate risks\textbf{ }as necessary. } & 
+\multicolumn{1}{|p{0.15\linewidth}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Likelihood of harm}}} & 
+\multicolumn{1}{|p{0.15\linewidth}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Severity of harm}}} & 
+\multicolumn{1}{|p{0.15\linewidth}|}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Overall risk }}} \\
 \hhline{----}
 %row no:2
-\multicolumn{1}{|p{3.91in}}{} & 
-\multicolumn{1}{|p{0.78in}}{{\fontsize{11pt}{13.2pt}\selectfont Remote, possible or probable}} & 
-\multicolumn{1}{|p{0.76in}}{{\fontsize{11pt}{13.2pt}\selectfont Minimal, significant or severe}} & 
-\multicolumn{1}{|p{0.68in}|}{{\fontsize{11pt}{13.2pt}\selectfont Low, medium or high}} \\
+\multicolumn{1}{|p{0.55\linewidth}}{} & 
+\multicolumn{1}{|p{0.15\linewidth}}{{\fontsize{11pt}{13.2pt}\selectfont Remote, possible or probable}} & 
+\multicolumn{1}{|p{0.15\linewidth}}{{\fontsize{11pt}{13.2pt}\selectfont Minimal, significant or severe}} & 
+\multicolumn{1}{|p{0.15\linewidth}|}{{\fontsize{11pt}{13.2pt}\selectfont Low, medium or high}} \\
 \hhline{----}
 
 \end{tabular}
@@ -367,8 +319,8 @@
  \end{table}
 \part{Critical Assessment}
 
-\bibliographystyle{unsrt}
-\bibliography{mybib}
+
+\printbibliography
 
 \end{document}
 
