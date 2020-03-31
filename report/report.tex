@@ -96,27 +96,29 @@ These features require an assessment of the impact of the envisaged processing o
 % Use
 None of the images submitted are retained in their raw form. 
 Instead, images are deconstructed on submission into face landmarks (coordinates of facial features) and attributes (age, emotion, gender, etc.) \cite{patrickfarley}. The face landmarks can be used to identify the same person appearing in different images, and for assessing their emotion or demographic. Users are also able to attach custom metadata to any group or person that they create using the API. 
+
 % Store
 Processing and storage occurs in the cloud, specifically using Azure. 
 Users can choose the geographical region that they would like their data to be stored. 
 Data stored using a multi-tenant approach, where multiple customers data will be stored on the same hardware \cite{terrylanfear}. 
 However, the data is segregated such that users cannot access data they do not own.
 Azure staff are unable to access the data without explicit permission from a user, and any access and is heavily monitored. 
-Access to the data and model requires a cryptographic key.
+    Access to the data and model requires a cryptographic key. Two key types exist: an admin key which gives full rights to all operations and a query key which gives read-only access. Keys can be be created and revoked by users with the necessary permissions \cite{heidisteen}.
 
 % Delete
 The documentation shows that consumers of the API can delete anything they create (groups of people, individual people) with immediate effect \cite{documentation}. 
 When users delete data or remove their accounts, their data is destroyed by being overwritten. 
 Physical hardware when decommissioned is also destroyed.
+
 % Sharing
 Data provided by customers is not shared with any third parties, and is not accessible by default to Microsoft. This is achieved through access control, network security, and encryption of data at rest.
 % High Risk
+
 Areas of high risk include the transit of data between user and the service, and the storage of the data and model. 
 Data has the potential to be intercepted or accessed by an unauthorized entity at any of these stages.
 Any logging of processes also has the potential to leak data. 
 The preprocessing of the images to determine attributes such as gender also has a high level of risk. 
-Both correct and incorrect classifications could influence individuals being processed by the system. 
-For example, a shop may use the facial recognition software to identify known criminals, which could result in customers of the shop being treated differently depending on the software output.
+Both correct and incorrect classifications could influence individuals that are processed by the system. 
 } \\ 
 \hhline{-} 
 \end{longtable} 
