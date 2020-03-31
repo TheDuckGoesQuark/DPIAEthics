@@ -7,6 +7,7 @@
 \usepackage{hhline}
 \usepackage{multicol}
 \usepackage{float}
+\usepackage{longtable}
 \usepackage[
     urldate=long,
     sorting=none
@@ -83,29 +84,42 @@ These features require an assessment of the impact of the envisaged processing o
 \section*{Step 2: Describe the processing} 
 
 %%%%%%%%%%%%%%%%%%%% Table No: 3 starts here %%%%%%%%%%%%%%%%%%%% 
-\begin{table}[H] 
-\centering 
-\begin{tabular}{p{\linewidth}} 
+\begin{longtable}{p{\linewidth}} 
 \hline %row no:1 
 \multicolumn{1}{|p{\linewidth}|}{
 \textbf{Describe the nature of the processing: }how will you collect, use, store and delete data? What is the source of the data? Will you be sharing data with anyone? You might find it useful to refer to a flow diagram or other way of describing data flows. What types of processing identified as likely high risk are involved?} \\ 
 \hhline{-} %row no:2 
 \multicolumn{1}{|p{\linewidth}|}{
     Figure \ref{fig:identify} shows an example of the facial recognition API usage flow for reference. 
+% Collect
+    Consumers of the cognitive services API provide all data used by the software, which includes images of people for identification and training. The URL of images are provided using HTTPS, which are then fetched by the service to be processed.
+% Use
+None of the images submitted are retained in their raw form. 
+Instead, images are deconstructed on submission into face landmarks (coordinates of facial features) and attributes (age, emotion, gender, etc.) \cite{patrickfarley}. The face landmarks can be used to identify the same person appearing in different images, and for assessing their emotion or demographic. Users are also able to attach custom metadata to any group or person that they create using the API. 
+% Store
+Processing and storage occurs in the cloud, specifically using Azure. 
+Users can choose the geographical region that they would like their data to be stored. 
+Data stored using a multi-tenant approach, where multiple customers data will be stored on the same hardware \cite{terrylanfear}. 
+However, the data is segregated such that users cannot access data they do not own.
+Azure staff are unable to access the data without explicit permission from a user, and any access and is heavily monitored. 
+Access to the data and model requires a cryptographic key.
 
-    Consumers of the cognitive services API provide all data used by the software, which includes images of people for identification and training. 
-    None of the images submitted are retained in their raw form. 
-    Instead, images are deconstructed on submission into face landmarks (coordinates of facial features) and attributes (age, emotion, gender, etc.) \cite{patrickfarley}. 
-    Users are also able to attach custom metadata to any group or person that they create using the API. 
-    The documentation shows that consumers of the API can delete anything they create (groups of people, individual people) with immediate effect \cite{documentation}. 
-    Processing and storage occurs in the cloud, specifically using Azure. 
-    The models and data can only be accessed and manipulated by those with %TODO who has access \cite{terrylanfear}
-
-
+% Delete
+The documentation shows that consumers of the API can delete anything they create (groups of people, individual people) with immediate effect \cite{documentation}. 
+When users delete data or remove their accounts, their data is destroyed by being overwritten. 
+Physical hardware when decommissioned is also destroyed.
+% Sharing
+Data provided by customers is not shared with any third parties, and is not accessible by default to Microsoft. This is achieved through access control, network security, and encryption of data at rest.
+% High Risk
+Areas of high risk include the transit of data between user and the service, and the storage of the data and model. 
+Data has the potential to be intercepted or accessed by an unauthorized entity at any of these stages.
+Any logging of processes also has the potential to leak data. 
+The preprocessing of the images to determine attributes such as gender also has a high level of risk. 
+Both correct and incorrect classifications could influence individuals being processed by the system. 
+For example, a shop may use the facial recognition software to identify known criminals, which could result in customers of the shop being treated differently depending on the software output.
 } \\ 
 \hhline{-} 
-\end{tabular} 
-\end{table} 
+\end{longtable} 
 %%%%%%%%%%%%%%%%%%%% Table No: 3 ends here %%%%%%%%%%%%%%%%%%%% 
 
 \vspace{\baselineskip} 
