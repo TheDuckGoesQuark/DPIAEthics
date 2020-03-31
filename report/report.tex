@@ -8,6 +8,7 @@
 \usepackage{multicol}
 \usepackage{float}
 \usepackage{longtable}
+\usepackage{geometry}
 \usepackage[
     urldate=long,
     sorting=none
@@ -61,25 +62,28 @@
 \hline %row no:1 
 \multicolumn{1}{|p{\linewidth}|}{Explain broadly what project aims to achieve and what type of processing it involves. You may find it helpful to refer or link to other documents, such as a project proposal. Summarise why you identified the need for a DPIA.} \\ 
 \hhline{-} %row no:2 
-\multicolumn{1}{|p{\linewidth}|}{
+\end{tabular}
+\end{table}
 Microsofts' general purpose Face software can extract features such as age, emotion, gender, pose, smile, and facial hair from images of humans \cite{face}. 
 Images can be cross referenced to determine if the same person appears in them, and emotions can be detected based on facial features.
 West provides a compilation of current and future applications for facial recognition\cite{facefirst}, which range from unlocking mobile devices to identifying and finding missing children.
-These features require an assessment of the impact of the envisaged processing operations on the protection of personal data, as they meet the following requirements of Article 35(3) \cite{EUdataregulations2018}:
-    \begin{itemize}
-            \item Article 35(3)(a) applies as the facial recognition software attempts to profile individuals based on their appearance. The results of this profiling will likely be used to make decisions that affect the individual being profiled.
-            \item Article 35(3)(c) applies as one of the use cases touted by Microsoft is `count people in a space for crowd control', which would require systematic monitoring of a publicly accessible area on a large scale.
-    \end{itemize}
-} \\ 
-\hhline{-} 
-\end{tabular} 
-\end{table} 
 
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=\linewidth]{images/identifyflow}
-    \caption{Usage flow for person identification} \label{fig:identify}
-\end{figure}
+These features require an assessment of the impact of the envisaged processing operations on the protection of personal data, as they meet the requirement of Article 35(3)(a) \cite{EUdataregulations2018}: the facial recognition software attempts to profile individuals based on their appearance. The results of this profiling will likely be used to make decisions that affect the individual being profiled.
+
+The project also requires a DPIA according to the UK ICO's guidance as it involves:
+\begin{itemize}
+    \itemsep0em 
+    \item carrying out profiling on a large scale.
+    \item processing of biometric data.
+    \item process personal data that could result in a risk of physical harm in the event of a security breach.
+    \item match data or combine datasets from different sources.
+    \item collect personal data from a source other than the individual without providing them a privacy notice.
+    \item profile children or target marketing or online services at them
+\end{itemize}
+
+Since the service does not monitor or restrict what data is provided and how it is collected, the last three cases can be incurred by users of the service. 
+
+\pagebreak
 
 \section*{Step 2: Describe the processing} 
 
@@ -87,12 +91,15 @@ These features require an assessment of the impact of the envisaged processing o
 \begin{longtable}{p{\linewidth}} 
 \hline %row no:1 
 \multicolumn{1}{|p{\linewidth}|}{
-\textbf{Describe the nature of the processing: }how will you collect, use, store and delete data? What is the source of the data? Will you be sharing data with anyone? You might find it useful to refer to a flow diagram or other way of describing data flows. What types of processing identified as likely high risk are involved?} \\ 
+\textbf{Describe the nature of the processing: }how will you collect, use, store and delete data? What is the source of the data? Will you be sharing data with anyone? You might find it useful to refer to a flow diagram or other way of describing data flows. What types of processing identified as likely high risk are involved?} \\*
 \hhline{-} %row no:2 
-\multicolumn{1}{|p{\linewidth}|}{
-    Figure \ref{fig:identify} shows an example of the facial recognition API usage flow for reference. 
+\end{longtable} 
+
+Figure \ref{fig:identify} shows an example of the facial recognition API usage flow for reference. 
+
 % Collect
-    Consumers of the cognitive services API provide all data used by the software, which includes images of people for identification and training. The URL of images are provided using HTTPS, which are then fetched by the service to be processed.
+Consumers of the cognitive services API (Application Program Interface) provide all data used by the software, which includes images of people for identification and training. The URL of images are provided using HTTPS (Hypertext Transfer Protocol Secure), which are then fetched by the service to be processed.
+
 % Use
 None of the images submitted are retained in their raw form. 
 Instead, images are deconstructed on submission into face landmarks (coordinates of facial features) and attributes (age, emotion, gender, etc.) \cite{patrickfarley}. The face landmarks can be used to identify the same person appearing in different images, and for assessing their emotion or demographic. Users are also able to attach custom metadata to any group or person that they create using the API. 
@@ -103,7 +110,7 @@ Users can choose the geographical region that they would like their data to be s
 Data stored using a multi-tenant approach, where multiple customers data will be stored on the same hardware \cite{terrylanfear}. 
 However, the data is segregated such that users cannot access data they do not own.
 Azure staff are unable to access the data without explicit permission from a user, and any access and is heavily monitored. 
-    Access to the data and model requires a cryptographic key. Two key types exist: an admin key which gives full rights to all operations and a query key which gives read-only access. Keys can be be created and revoked by users with the necessary permissions \cite{heidisteen}.
+Access to the data and model requires a cryptographic key. Two key types exist: an admin key which gives full rights to all operations and a query key which gives read-only access. Keys can be be created and revoked by users with the necessary permissions \cite{heidisteen}.
 
 % Delete
 The documentation shows that consumers of the API can delete anything they create (groups of people, individual people) with immediate effect \cite{documentation}. 
@@ -112,19 +119,23 @@ Physical hardware when decommissioned is also destroyed.
 
 % Sharing
 Data provided by customers is not shared with any third parties, and is not accessible by default to Microsoft. This is achieved through access control, network security, and encryption of data at rest.
-% High Risk
 
+% High Risk
 Areas of high risk include the transit of data between user and the service, and the storage of the data and model. 
 Data has the potential to be intercepted or accessed by an unauthorized entity at any of these stages.
 Any logging of processes also has the potential to leak data. 
 The preprocessing of the images to determine attributes such as gender also has a high level of risk. 
 Both correct and incorrect classifications could influence individuals that are processed by the system. 
-} \\ 
-\hhline{-} 
-\end{longtable} 
+
 %%%%%%%%%%%%%%%%%%%% Table No: 3 ends here %%%%%%%%%%%%%%%%%%%% 
 
-\vspace{\baselineskip} 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{images/identifyflow}
+    \caption{Usage flow for person identification} \label{fig:identify}
+\end{figure}
+
+
 %%%%%%%%%%%%%%%%%%%% Table No: 4 starts here %%%%%%%%%%%%%%%%%%%% 
 \begin{table}[H] 
 \centering 
@@ -133,12 +144,18 @@ Both correct and incorrect classifications could influence individuals that are 
 \multicolumn{1}{|p{\linewidth}|}{
 \textbf{Describe the scope of the processing: }what is the nature of the data, and does it include special category or criminal offence data? How much data will you be collecting and using? How often? How long will you keep it? How many individuals are affected? What geographical area does it cover?} \\ 
 \hhline{-} %row no:2 
-\multicolumn{1}{|p{\linewidth}|}{
-% TODO 
-} \\ 
-\hhline{-} 
 \end{tabular} 
 \end{table} 
+
+% TODO
+% Nature of the data
+% Special category or criminal offence
+% How much data 
+% How often is data collected
+% How long is data kept
+% How many individuals are affected
+% What geographical area does it cover
+
 %%%%%%%%%%%%%%%%%%%% Table No: 4 ends here %%%%%%%%%%%%%%%%%%%% 
 \vspace{\baselineskip} 
 %%%%%%%%%%%%%%%%%%%% Table No: 5 starts here %%%%%%%%%%%%%%%%%%%% 
