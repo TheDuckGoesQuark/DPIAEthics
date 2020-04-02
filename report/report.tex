@@ -76,12 +76,7 @@ The project also requires a DPIA according to the UK ICO's guidance as it involv
     \item carrying out profiling on a large scale.
     \item processing of biometric data.
     \item process personal data that could result in a risk of physical harm in the event of a security breach.
-    \item match data or combine datasets from different sources.
-    \item collect personal data from a source other than the individual without providing them a privacy notice.
-    \item profile children or target marketing or online services at them
 \end{itemize}
-
-Since the service does not monitor or restrict what data is provided and how it is collected, the last three cases can be incurred by users of the service. 
 
 \pagebreak
 
@@ -95,30 +90,42 @@ Since the service does not monitor or restrict what data is provided and how it 
 \hhline{-} %row no:2 
 \end{longtable} 
 
-Figure \ref{fig:identify} shows an example of the facial recognition API usage flow for reference. 
+Figure \ref{fig:identify} shows an example of the facial recognition API usage flow for reference. The Face API processes three different categories of data \cite{robmazz}: 
+\begin{itemize}
+    \item Customer Data: any data provided by a customer using the service, such as images of faces and metadata attached to people and groups. 
+          Usernames and billing information is also included in this category.
+    \item Service Generated Data: logs and usage monitoring data which contains pseudonymized data. 
+    \item Support Data: information provided by the customer when seeking technical support with the service. For example, emails asking how to use the service or how to resolve an issue.
+\end{itemize}
 
 % Collect
-Consumers of the cognitive services API (Application Program Interface) provide all data used by the software, which includes images of people for identification and training. The URL of images are provided using HTTPS (Hypertext Transfer Protocol Secure), which are then fetched by the service to be processed.
+Consumers of the cognitive services API (Application Program Interface) provide custmer data which is used by the software. 
+This includes images of people for identification and training. 
+The URL of images are provided using HTTPS (Hypertext Transfer Protocol Secure), which are then fetched by the service to be processed. 
+Service generated data is produced by the servers that process user requests. 
+Support data is supplied by customers and the technical support team.
 
 % Use
 None of the images submitted are retained in their raw form. 
 Instead, images are deconstructed on submission into face landmarks (coordinates of facial features) and attributes (age, emotion, gender, etc.) \cite{patrickfarley}. The face landmarks can be used to identify the same person appearing in different images, and for assessing their emotion or demographic. Users are also able to attach custom metadata to any group or person that they create using the API. 
+Service generated data is used to determine billing of users, and for maintenance of the software.
+Support data is used to identify usability issues with the software and help solve customer issues.
 
 % Store
 Processing and storage occurs in the cloud, specifically using Azure. 
 Users can choose the geographical region that they would like their data to be stored. 
-Data stored using a multi-tenant approach, where multiple customers data will be stored on the same hardware \cite{terrylanfear}. 
+Data is stored using a multi-tenant approach, where multiple customers data will be stored on the same hardware \cite{terrylanfear}. 
 However, the data is segregated such that users cannot access data they do not own.
 Azure staff are unable to access the data without explicit permission from a user, and any access and is heavily monitored. 
 Access to the data and model requires a cryptographic key. Two key types exist: an admin key which gives full rights to all operations and a query key which gives read-only access. Keys can be be created and revoked by users with the necessary permissions \cite{heidisteen}.
 
 % Delete
-The documentation shows that consumers of the API can delete anything they create (groups of people, individual people) with immediate effect \cite{documentation}. 
+The documentation shows that consumers of the API can delete anything they create (groups of people, individual people, face metadata) with immediate effect \cite{documentation}. 
 When users delete data or remove their accounts, their data is destroyed by being overwritten. 
 Physical hardware when decommissioned is also destroyed.
 
 % Sharing
-Data provided by customers is not shared with any third parties, and is not accessible by default to Microsoft. This is achieved through access control, network security, and encryption of data at rest.
+Data provided by customers is not shared with any third parties, and is not accessible by default to Microsoft. This is achieved through access control, network security, and encryption of data at rest. 
 
 % High Risk
 Areas of high risk include the transit of data between user and the service, and the storage of the data and model. 
@@ -134,7 +141,6 @@ Both correct and incorrect classifications could influence individuals that are 
     \includegraphics[width=\linewidth]{images/identifyflow}
     \caption{Usage flow for person identification} \label{fig:identify}
 \end{figure}
-
 
 %%%%%%%%%%%%%%%%%%%% Table No: 4 starts here %%%%%%%%%%%%%%%%%%%% 
 \begin{table}[H] 
