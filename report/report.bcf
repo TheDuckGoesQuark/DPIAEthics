@@ -2003,6 +2003,10 @@
     <bcf:citekey order="6">terrylanfear</bcf:citekey>
     <bcf:citekey order="7">heidisteen</bcf:citekey>
     <bcf:citekey order="8">documentation</bcf:citekey>
+    <bcf:citekey order="9">vollmer_2018</bcf:citekey>
+    <bcf:citekey order="10">ico</bcf:citekey>
+    <bcf:citekey order="11">faceoverview</bcf:citekey>
+    <bcf:citekey order="12">availability</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

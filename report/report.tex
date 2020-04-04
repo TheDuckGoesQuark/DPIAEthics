@@ -125,7 +125,8 @@ When users delete data or remove their accounts, their data is destroyed by bein
 Physical hardware when decommissioned is also destroyed.
 
 % Sharing
-Data provided by customers is not shared with any third parties, and is not accessible by default to Microsoft. This is achieved through access control, network security, and encryption of data at rest. 
+Customer data is not shared with any third parties, and is not accessible by default to Microsoft. 
+This is achieved through access control, network security, and encryption of data at rest. 
 
 % High Risk
 Areas of high risk include the transit of data between user and the service, and the storage of the data and model. 
@@ -136,7 +137,7 @@ Both correct and incorrect classifications could influence individuals that are 
 
 %%%%%%%%%%%%%%%%%%%% Table No: 3 ends here %%%%%%%%%%%%%%%%%%%% 
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=\linewidth]{images/identifyflow}
     \caption{Usage flow for person identification} \label{fig:identify}
@@ -153,14 +154,31 @@ Both correct and incorrect classifications could influence individuals that are 
 \end{tabular} 
 \end{table} 
 
-% TODO
 % Nature of the data
+Customer data that will be processed includes raw images of faces that are supplied by the user, descriptions of faces detected by the service in these images as coordinates, generated categorisation data such as gender, emotions, and any metadata that the users tag groups/people/images with themselves. 
+
+
 % Special category or criminal offence
+Only the user supplied metadata is not essential to use the service. This data comes under GDPR special category data as it can be considered biometric data used to identify an individual.
+Service generated data such as logs will likely contain the IP addresses of users and their usernames, which are considered personal data according to recital 30 of GPDR \cite{vollmer_2018} and by the UK ICO \cite{ico} respectively. 
+Microsoft has no control over what data is stored under the user supplied metadata, ad so it is the responsibility of the user to determine appropriate use of this feature.
+
 % How much data 
+Each group can contain up to 1 million different person objects, and each person can have up to 248 faces registered \cite{faceoverview}. There is virtually no limit on the number of groups that users can create. 
+
 % How often is data collected
+Service generated data such as logs will be collected every time a user interacts with the service. 
+Customer data is only collected when explicitly provided by the customer.
+
 % How long is data kept
+Processed face images for identification purposes are kept for 24 hours unless deleted by the user. Persisted faces used for model training are retained until deleted by the user.
+
 % How many individuals are affected
+The number of individuals affected corresponds to the the number of people and faces submitted to the service, as well as the number of users of the service. 
+Both are potentially limitless.
+
 % What geographical area does it cover
+The Face API is available essentially worldwide. More details can be found at \cite{availability}.
 
 %%%%%%%%%%%%%%%%%%%% Table No: 4 ends here %%%%%%%%%%%%%%%%%%%% 
 \vspace{\baselineskip} 
@@ -377,6 +395,8 @@ Both correct and incorrect classifications could influence individuals that are 
  \end{table}
 \part{Critical Assessment}
 
+% what to do about general purpose storage solutions? 
+% doesn't help draw the line between interconnected services (i.e. do I need to talk about the billing service here?)
 
 \printbibliography
 

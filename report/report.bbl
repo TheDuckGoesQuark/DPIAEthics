@@ -1,0 +1,273 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{face}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{title}{Facial Recognition: Microsoft Azure}
+      \verb{urlraw}
+      \verb https://azure.microsoft.com/en-gb/services/cognitive-services/face
+      \endverb
+      \verb{url}
+      \verb https://azure.microsoft.com/en-gb/services/cognitive-services/face
+      \endverb
+    \endentry
+    \entry{facefirst}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{FaceFirst Face Recognition Software}
+      \field{month}{10}
+      \field{title}{21 Amazing Uses for Face Recognition – Facial Recognition Use Cases}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.facefirst.com/blog/amazing-uses-for-face-recognition-facial-recognition-use-cases/
+      \endverb
+      \verb{url}
+      \verb https://www.facefirst.com/blog/amazing-uses-for-face-recognition-facial-recognition-use-cases/
+      \endverb
+    \endentry
+    \entry{EUdataregulations2018}{online}{}
+      \list{organization}{1}{%
+        {European Commission}%
+      }
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{month}{5}
+      \field{title}{Article 35 EU GDPR "Data protection impact assessment"}
+      \field{urlday}{30}
+      \field{urlmonth}{3}
+      \field{urlyear}{2020}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.privacy-regulation.eu/en/article-35-data-protection-impact-assessment-GDPR.htm
+      \endverb
+      \verb{url}
+      \verb https://www.privacy-regulation.eu/en/article-35-data-protection-impact-assessment-GDPR.htm
+      \endverb
+    \endentry
+    \entry{robmazz}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f7fe334aa231dbccecab8d214d16f03b}{%
+           family={Robmazz},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{f7fe334aa231dbccecab8d214d16f03b}
+      \strng{fullhash}{f7fe334aa231dbccecab8d214d16f03b}
+      \strng{bibnamehash}{f7fe334aa231dbccecab8d214d16f03b}
+      \strng{authorbibnamehash}{f7fe334aa231dbccecab8d214d16f03b}
+      \strng{authornamehash}{f7fe334aa231dbccecab8d214d16f03b}
+      \strng{authorfullhash}{f7fe334aa231dbccecab8d214d16f03b}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{DPIA Azure for the GDPR - Microsoft GDPR | Microsoft Docs}
+      \field{title}{DPIA Azure for the GDPR - Microsoft GDPR}
+      \verb{urlraw}
+      \verb https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dpia-azure?view=o365-worldwide
+      \endverb
+      \verb{url}
+      \verb https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dpia-azure?view=o365-worldwide
+      \endverb
+    \endentry
+    \entry{patrickfarley}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e2ce2a4f123a9adda1b8ae225abf8c16}{%
+           family={PatrickFarley},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{e2ce2a4f123a9adda1b8ae225abf8c16}
+      \strng{fullhash}{e2ce2a4f123a9adda1b8ae225abf8c16}
+      \strng{bibnamehash}{e2ce2a4f123a9adda1b8ae225abf8c16}
+      \strng{authorbibnamehash}{e2ce2a4f123a9adda1b8ae225abf8c16}
+      \strng{authornamehash}{e2ce2a4f123a9adda1b8ae225abf8c16}
+      \strng{authorfullhash}{e2ce2a4f123a9adda1b8ae225abf8c16}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{concepts - Azure Cognitive Services | Microsoft Docs}
+      \field{title}{Face detection and attributes concepts - Azure Cognitive Services}
+      \verb{urlraw}
+      \verb https://docs.microsoft.com/en-us/azure/cognitive-services/face/concepts/face-detection#face-landmarks
+      \endverb
+      \verb{url}
+      \verb https://docs.microsoft.com/en-us/azure/cognitive-services/face/concepts/face-detection#face-landmarks
+      \endverb
+    \endentry
+    \entry{terrylanfear}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=6ecadd24d20c09b52d3891be58ffea32}{%
+           family={TerryLanfear},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{6ecadd24d20c09b52d3891be58ffea32}
+      \strng{fullhash}{6ecadd24d20c09b52d3891be58ffea32}
+      \strng{bibnamehash}{6ecadd24d20c09b52d3891be58ffea32}
+      \strng{authorbibnamehash}{6ecadd24d20c09b52d3891be58ffea32}
+      \strng{authornamehash}{6ecadd24d20c09b52d3891be58ffea32}
+      \strng{authorfullhash}{6ecadd24d20c09b52d3891be58ffea32}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Protection of customer data in Azure | Microsoft Docs}
+      \field{title}{Protection of customer data in Azure}
+      \verb{urlraw}
+      \verb https://docs.microsoft.com/en-us/azure/security/fundamentals/protection-customer-data
+      \endverb
+      \verb{url}
+      \verb https://docs.microsoft.com/en-us/azure/security/fundamentals/protection-customer-data
+      \endverb
+    \endentry
+    \entry{heidisteen}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=442dbe37169e69cecfa348bfa7f477a2}{%
+           family={HeidiSteen},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{442dbe37169e69cecfa348bfa7f477a2}
+      \strng{fullhash}{442dbe37169e69cecfa348bfa7f477a2}
+      \strng{bibnamehash}{442dbe37169e69cecfa348bfa7f477a2}
+      \strng{authorbibnamehash}{442dbe37169e69cecfa348bfa7f477a2}
+      \strng{authornamehash}{442dbe37169e69cecfa348bfa7f477a2}
+      \strng{authorfullhash}{442dbe37169e69cecfa348bfa7f477a2}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Create, manage, and secure admin and query api-keys - Azure Cognitive Search | Microsoft Docs}
+      \field{title}{Create, manage, and secure admin and query api-keys - Azure Cognitive Search}
+      \verb{urlraw}
+      \verb https://docs.microsoft.com/en-us/azure/search/search-security-api-keys
+      \endverb
+      \verb{url}
+      \verb https://docs.microsoft.com/en-us/azure/search/search-security-api-keys
+      \endverb
+    \endentry
+    \entry{documentation}{misc}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Microsoft Cognitive Services}
+      \field{title}{Cognitive Services API Documentation}
+      \verb{urlraw}
+      \verb https://westus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236
+      \endverb
+      \verb{url}
+      \verb https://westus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236
+      \endverb
+    \endentry
+    \entry{vollmer_2018}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=cbe9643e20873f1529b7c9d944a1a966}{%
+           family={Vollmer},
+           familyi={V\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SecureDataService}%
+      }
+      \strng{namehash}{cbe9643e20873f1529b7c9d944a1a966}
+      \strng{fullhash}{cbe9643e20873f1529b7c9d944a1a966}
+      \strng{bibnamehash}{cbe9643e20873f1529b7c9d944a1a966}
+      \strng{authorbibnamehash}{cbe9643e20873f1529b7c9d944a1a966}
+      \strng{authornamehash}{cbe9643e20873f1529b7c9d944a1a966}
+      \strng{authorfullhash}{cbe9643e20873f1529b7c9d944a1a966}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Recital 30 EU General Data Protection Regulation (EU-GDPR). Privacy/Privazy according to plan.}
+      \field{month}{9}
+      \field{title}{Recital 30 EU General Data Protection Regulation (EU-GDPR)}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.privacy-regulation.eu/en/recital-30-GDPR.htm
+      \endverb
+      \verb{url}
+      \verb https://www.privacy-regulation.eu/en/recital-30-GDPR.htm
+      \endverb
+    \endentry
+    \entry{ico}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ICO}
+      \field{title}{What are identifiers and related factors?}
+      \verb{urlraw}
+      \verb https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/what-is-personal-data/what-are-identifiers-and-related-factors/
+      \endverb
+      \verb{url}
+      \verb https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/what-is-personal-data/what-are-identifiers-and-related-factors/
+      \endverb
+    \endentry
+    \entry{faceoverview}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e2ce2a4f123a9adda1b8ae225abf8c16}{%
+           family={PatrickFarley},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{e2ce2a4f123a9adda1b8ae225abf8c16}
+      \strng{fullhash}{e2ce2a4f123a9adda1b8ae225abf8c16}
+      \strng{bibnamehash}{e2ce2a4f123a9adda1b8ae225abf8c16}
+      \strng{authorbibnamehash}{e2ce2a4f123a9adda1b8ae225abf8c16}
+      \strng{authornamehash}{e2ce2a4f123a9adda1b8ae225abf8c16}
+      \strng{authorfullhash}{e2ce2a4f123a9adda1b8ae225abf8c16}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Azure Cognitive Services | Microsoft Docs}
+      \field{title}{Face API Overview - Azure Cognitive Services}
+      \verb{urlraw}
+      \verb https://docs.microsoft.com/en-us/azure/cognitive-services/face/overview
+      \endverb
+      \verb{url}
+      \verb https://docs.microsoft.com/en-us/azure/cognitive-services/face/overview
+      \endverb
+    \endentry
+    \entry{availability}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Azure products by region | Microsoft Azure}
+      \field{title}{Azure products by region: Microsoft Azure}
+      \verb{urlraw}
+      \verb https://azure.microsoft.com/en-gb/global-infrastructure/services/?products=cognitive-services®ions
+      \endverb
+      \verb{url}
+      \verb https://azure.microsoft.com/en-gb/global-infrastructure/services/?products=cognitive-services%C2%AEions
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
