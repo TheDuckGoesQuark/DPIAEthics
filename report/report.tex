@@ -98,20 +98,19 @@ Figure \ref{fig:identify} shows an example of the facial recognition API usage f
     \item Support Data: information provided by the customer when seeking technical support with the service. For example, emails asking how to use the service or how to resolve an issue.
 \end{itemize}
 
-% Collect
-Consumers of the cognitive services API (Application Program Interface) provide custmer data which is used by the software. 
+\paragraph{Collect} Consumers of the cognitive services API (Application Program Interface) provide custmer data which is used by the software. 
 This includes images of people for identification and training. 
 The URL of images are provided using HTTPS (Hypertext Transfer Protocol Secure), which are then fetched by the service to be processed. 
 Service generated data is produced by the servers that process user requests. 
 Support data is supplied by customers and the technical support team.
 
-% Use
+\paragraph{Use}
 None of the images submitted are retained in their raw form. 
 Instead, images are deconstructed on submission into face landmarks (coordinates of facial features) and attributes (age, emotion, gender, etc.) \cite{patrickfarley}. The face landmarks can be used to identify the same person appearing in different images, and for assessing their emotion or demographic. Users are also able to attach custom metadata to any group or person that they create using the API. 
 Service generated data is used to determine billing of users, and for maintenance of the software.
 Support data is used to identify usability issues with the software and help solve customer issues.
 
-% Store
+\paragraph{Store}
 Processing and storage occurs in the cloud, specifically using Azure. 
 Users can choose the geographical region that they would like their data to be stored. 
 Data is stored using a multi-tenant approach, where multiple customers data will be stored on the same hardware \cite{terrylanfear}. 
@@ -119,16 +118,16 @@ However, the data is segregated such that users cannot access data they do not o
 Azure staff are unable to access the data without explicit permission from a user, and any access and is heavily monitored. 
 Access to the data and model requires a cryptographic key. Two key types exist: an admin key which gives full rights to all operations and a query key which gives read-only access. Keys can be be created and revoked by users with the necessary permissions \cite{heidisteen}.
 
-% Delete
+\paragraph{Delete}
 The documentation shows that consumers of the API can delete anything they create (groups of people, individual people, face metadata) with immediate effect \cite{documentation}. 
 When users delete data or remove their accounts, their data is destroyed by being overwritten. 
 Physical hardware when decommissioned is also destroyed.
 
-% Sharing
+\paragraph{Sharing}
 Customer data is not shared with any third parties, and is not accessible by default to Microsoft. 
 This is achieved through access control, network security, and encryption of data at rest. 
 
-% High Risk
+\paragraph{High Risk}
 Areas of high risk include the transit of data between user and the service, and the storage of the data and model. 
 Data has the potential to be intercepted or accessed by an unauthorized entity at any of these stages.
 Any logging of processes also has the potential to leak data. 
@@ -154,30 +153,30 @@ Both correct and incorrect classifications could influence individuals that are 
 \end{tabular} 
 \end{table} 
 
-% Nature of the data
+\paragraph{Nature of the data}
 Customer data that will be processed includes raw images of faces that are supplied by the user, descriptions of faces detected by the service in these images as coordinates, generated categorisation data such as gender, emotions, and any metadata that the users tag groups/people/images with themselves. 
 
 
-% Special category or criminal offence
+\paragraph{Special category or criminal offence}
 Only the user supplied metadata is not essential to use the service. This data comes under GDPR special category data as it can be considered biometric data used to identify an individual.
 Service generated data such as logs will likely contain the IP addresses of users and their usernames, which are considered personal data according to recital 30 of GPDR \cite{vollmer_2018} and by the UK ICO \cite{ico} respectively. 
 Microsoft has no control over what data is stored under the user supplied metadata, ad so it is the responsibility of the user to determine appropriate use of this feature.
 
-% How much data 
+\paragraph{How much data }
 Each group can contain up to 1 million different person objects, and each person can have up to 248 faces registered \cite{faceoverview}. There is virtually no limit on the number of groups that users can create. 
 
-% How often is data collected
+\paragraph{How often is data collected}
 Service generated data such as logs will be collected every time a user interacts with the service. 
 Customer data is only collected when explicitly provided by the customer.
 
-% How long is data kept
+\paragraph{How long is data kept}
 Processed face images for identification purposes are kept for 24 hours unless deleted by the user. Persisted faces used for model training are retained until deleted by the user.
 
-% How many individuals are affected
+\paragraph{How many individuals are affected}
 The number of individuals affected corresponds to the the number of people and faces submitted to the service, as well as the number of users of the service. 
 Both are potentially limitless.
 
-% What geographical area does it cover
+\paragraph{What geographical area does it cover}
 The Face API is available essentially worldwide. More details can be found at \cite{availability}.
 
 %%%%%%%%%%%%%%%%%%%% Table No: 4 ends here %%%%%%%%%%%%%%%%%%%% 
@@ -190,14 +189,22 @@ The Face API is available essentially worldwide. More details can be found at \c
 \multicolumn{1}{|p{\linewidth}|}{
 \textbf{Describe the context of the processing: }what is the nature of your relationship with the individuals? How much control will they have? Would they expect you to use their data in this way? Do they include children or other vulnerable groups? Are there prior concerns over this type of processing or security flaws? Is it novel in any way? What is the current state of technology in this area? Are there any current issues of public concern that you should factor in? Are you signed up to any approved code of conduct or certification scheme (once any have been approved)?} \\ 
 \hhline{-} %row no:2 
-\multicolumn{1}{|p{\linewidth}|}{
-% TODO 
-} \\ 
 \hhline{-} 
 \end{tabular} 
 \end{table} 
+
+\paragraph{ What is the nature of your responsibility with the individuals}
+\paragraph{How much control will they have}
+\paragraph{Would they expect you to use their data in this way}
+\paragraph{Do they include children or other vulnerable groups}
+\paragraph{Are there prior concerns over this type of processing or security flaws}
+\paragraph{Is it novel in any way}
+\paragraph{What is current state of technology in this area}
+\paragraph{Are there any current issues of public concern that you should factor in}
+\paragraph{Are you signed up to any approved code of conduct or certification scheme (once any have been approved)}
+
 %%%%%%%%%%%%%%%%%%%% Table No: 5 ends here %%%%%%%%%%%%%%%%%%%% 
-\vspace{\baselineskip}
+
 %%%%%%%%%%%%%%%%%%%% Table No: 6 starts here %%%%%%%%%%%%%%%%%%%%
 
 
