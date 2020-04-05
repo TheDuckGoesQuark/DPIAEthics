@@ -369,6 +369,48 @@
       \verb https://www.theengineer.co.uk/poll-facial-recognition-uk/
       \endverb
     \endentry
+    \entry{Buolamwini2018GenderSI}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=694238e772e190a6c1c2e0c1e68ee000}{%
+           family={Buolamwini},
+           familyi={B\bibinitperiod},
+           given={Joy},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f2b0ffb56c5d1e4220c16c0258e02eae}{%
+           family={Gebru},
+           familyi={G\bibinitperiod},
+           given={Timnit},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{fullhash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{bibnamehash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{authorbibnamehash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{authornamehash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \strng{authorfullhash}{1d3df5a4e120235c82cc5c5428e6a913}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{FAT}
+      \field{title}{Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification}
+      \field{year}{2018}
+    \endentry
+    \entry{microsoftontheissues_2018}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Microsoft on the Issues}
+      \field{month}{7}
+      \field{title}{Facial recognition technology: The need for public regulation and corporate responsibility}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://blogs.microsoft.com/on-the-issues/2018/07/13/facial-recognition-technology-the-need-for-public-regulation-and-corporate-responsibility/
+      \endverb
+      \verb{url}
+      \verb https://blogs.microsoft.com/on-the-issues/2018/07/13/facial-recognition-technology-the-need-for-public-regulation-and-corporate-responsibility/
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
