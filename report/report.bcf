@@ -2007,6 +2007,10 @@
     <bcf:citekey order="10">ico</bcf:citekey>
     <bcf:citekey order="11">faceoverview</bcf:citekey>
     <bcf:citekey order="12">availability</bcf:citekey>
+    <bcf:citekey order="13">firstface</bcf:citekey>
+    <bcf:citekey order="14">police</bcf:citekey>
+    <bcf:citekey order="15">nist</bcf:citekey>
+    <bcf:citekey order="16">engineersurvey</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

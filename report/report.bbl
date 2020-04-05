@@ -267,6 +267,108 @@
       \verb https://azure.microsoft.com/en-gb/global-infrastructure/services/?products=cognitive-services%C2%AEions
       \endverb
     \endentry
+    \entry{firstface}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{FaceFirst Face Recognition Software}
+      \field{month}{5}
+      \field{title}{History of Face Recognition \& Facial recognition software}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.facefirst.com/blog/brief-history-of-face-recognition-software/
+      \endverb
+      \verb{url}
+      \verb https://www.facefirst.com/blog/brief-history-of-face-recognition-software/
+      \endverb
+    \endentry
+    \entry{police}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=1d490a3720c84069a29c150898d4e21c}{%
+           family={10th\bibnamedelimb February\bibnamedelimb 2020\bibnamedelimb 4:00\bibnamedelima pm},
+           familyi={1\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim 2\bibinitperiod\bibinitdelim 4\bibinitperiod\bibinitdelim p\bibinitperiod},
+           given={24th\bibnamedelimb January\bibnamedelimb 2020\bibnamedelima 4:24},
+           giveni={2\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim 2\bibinitperiod\bibinitdelim 4\bibinitperiod},
+           prefix={pm},
+           prefixi={p\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d490a3720c84069a29c150898d4e21c}
+      \strng{fullhash}{1d490a3720c84069a29c150898d4e21c}
+      \strng{bibnamehash}{1d490a3720c84069a29c150898d4e21c}
+      \strng{authorbibnamehash}{1d490a3720c84069a29c150898d4e21c}
+      \strng{authornamehash}{1d490a3720c84069a29c150898d4e21c}
+      \strng{authorfullhash}{1d490a3720c84069a29c150898d4e21c}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Engineer}
+      \field{month}{2}
+      \field{title}{Met Police start fighting crime with Live Facial Recognition}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.theengineer.co.uk/metropolitan-police-facial-recognition-lfr/
+      \endverb
+      \verb{url}
+      \verb https://www.theengineer.co.uk/metropolitan-police-facial-recognition-lfr/
+      \endverb
+    \endentry
+    \entry{nist}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=37cffe27d00a197d353a4f8758a9e780}{%
+           family={Meilee.ngan@nist.gov},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{37cffe27d00a197d353a4f8758a9e780}
+      \strng{fullhash}{37cffe27d00a197d353a4f8758a9e780}
+      \strng{bibnamehash}{37cffe27d00a197d353a4f8758a9e780}
+      \strng{authorbibnamehash}{37cffe27d00a197d353a4f8758a9e780}
+      \strng{authornamehash}{37cffe27d00a197d353a4f8758a9e780}
+      \strng{authorfullhash}{37cffe27d00a197d353a4f8758a9e780}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NIST}
+      \field{month}{4}
+      \field{title}{Face Recognition Vendor Test (FRVT) Ongoing}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.nist.gov/programs-projects/face-recognition-vendor-test-frvt-ongoing
+      \endverb
+      \verb{url}
+      \verb https://www.nist.gov/programs-projects/face-recognition-vendor-test-frvt-ongoing
+      \endverb
+    \endentry
+    \entry{engineersurvey}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=6334d73804da8bff7f9fe6336e89621f}{%
+           family={Engineer},
+           familyi={E\bibinitperiod},
+           given={The},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{6334d73804da8bff7f9fe6336e89621f}
+      \strng{fullhash}{6334d73804da8bff7f9fe6336e89621f}
+      \strng{bibnamehash}{6334d73804da8bff7f9fe6336e89621f}
+      \strng{authorbibnamehash}{6334d73804da8bff7f9fe6336e89621f}
+      \strng{authornamehash}{6334d73804da8bff7f9fe6336e89621f}
+      \strng{authorfullhash}{6334d73804da8bff7f9fe6336e89621f}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Engineer}
+      \field{month}{3}
+      \field{title}{Last week's poll: Facial recognition technology in the UK}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.theengineer.co.uk/poll-facial-recognition-uk/
+      \endverb
+      \verb{url}
+      \verb https://www.theengineer.co.uk/poll-facial-recognition-uk/
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

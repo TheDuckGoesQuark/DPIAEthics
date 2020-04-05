@@ -193,15 +193,42 @@ The Face API is available essentially worldwide. More details can be found at \c
 \end{tabular} 
 \end{table} 
 
-\paragraph{ What is the nature of your responsibility with the individuals}
+\paragraph{What is the nature of your relationship with the individuals} 
+Consumers of the face API are customers. 
+% https://discourse.cs.st-andrews.ac.uk/t/cs5055-practical-3-report/34/7 asked here cause not sure
+
 \paragraph{How much control will they have}
+Customers are able to see, update, and delete any of their data uploaded to the service using HTTP endpoints.
+
 \paragraph{Would they expect you to use their data in this way}
+How the Face API uses data is made explicitly clear in its documentation.
+The process of accumulating training data to build a model and using it for classification as is done by the service is very typical for this area of technology.
+
 \paragraph{Do they include children or other vulnerable groups}
+The service could potentially process children or vulnerable groups. 
+It is dependent on the consumer of the service to determine appropriate usage of the service if any of these groups are involved.
+
 \paragraph{Are there prior concerns over this type of processing or security flaws}
+Data at-rest and in-transit are all secured using state-of-the-art methods. 
+There are concerns that facial recognition could be used for malicious purposes and automated decision making.
+
 \paragraph{Is it novel in any way}
+Facial recognition technology has been researched since the 1960s \cite{firstface}. 
+Facial recognition as a service is also not novel. 
+
 \paragraph{What is current state of technology in this area}
+Facial recognition technology is currently used by police during investigations and has proven effective in combating crime such as child sexual exploitation and knife crime in the UK \cite{police}.
+As a technology, it has matured enough to be considered fairly accurate. 
+Vendors of facial recognition technology have been evaluated on an almost yearly basis by the National Institute of Standards and Technology (NIST) \cite{nist}. 
+The difficulty of these evaluations have also increased over time.
+
 \paragraph{Are there any current issues of public concern that you should factor in}
+The main public concerns towards facial recognition technology are that of privacy violations and accuracy of the algorithms \cite{engineersurvey}.
+Ensuring that usage of the technology satisfies privacy concerns is mostly the responsibility of those using the service, as this project does not share any data provided by its users.
+
 \paragraph{Are you signed up to any approved code of conduct or certification scheme (once any have been approved)}
+% TODO ??
+
 
 %%%%%%%%%%%%%%%%%%%% Table No: 5 ends here %%%%%%%%%%%%%%%%%%%% 
 
@@ -404,6 +431,7 @@ The Face API is available essentially worldwide. More details can be found at \c
 
 % what to do about general purpose storage solutions? 
 % doesn't help draw the line between interconnected services (i.e. do I need to talk about the billing service here?)
+% what exactly is novel?
 
 \printbibliography
 
