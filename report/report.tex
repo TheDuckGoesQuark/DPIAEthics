@@ -251,6 +251,7 @@ The list can be found at \cite{microsoftcerts}.
 \paragraph{What is the intended effect on individuals} The intended effect on individuals is to help technology progress to make the world safer.
 
 \paragraph{What are the benefits of the processing - for you, and more broadly} The processing allows anyone to attempt to innovate with facial recognition technology.
+Microsoft are able to charge a fee based on how users consume the service.
 
 %%%%%%%%%%%%%%%%%%%% Table No: 6 ends here %%%%%%%%%%%%%%%%%%%%
 
@@ -343,15 +344,37 @@ Data may be replicated for resiliency within the specified region.
 \textbf{Severity of harm} & 
 \textbf{Overall risk} \\
 \hhline{----}
-Hello & 
-Remote, possible or probable & 
-Minimal, significant or severe & 
-Low, medium or high \\
+1. The software might be used to fully automate decisions rather than supplement human judgement, which could result in individuals being denied access to services or opportunities &
+Probable & 
+Severe & 
+High \\
 \hhline{----}
-
+2. Bias present in the models could discriminate against certain groups &
+Possible & 
+Severe & 
+High \\
+\hhline{----}
+3. Customer data is leaked or accessed by an unauthorized member of staff &
+Remote & 
+Severe & 
+Low \\
+\hhline{----}
+4. Users may share unnecessary personal data when communicating with technical support staff &
+Possible & 
+Medium & 
+Medium \\
+\hhline{----}
+5. Users may accidentally leak their API key to another person &
+Possible & 
+Severe& 
+High \\
+\hhline{----}
+6. Personal data may be leaked in service generated data such as logs&
+Possible & 
+Medium & 
+Medium \\
 \end{tabular}
- \end{table}
-
+\end{table}
 
 %%%%%%%%%%%%%%%%%%%% Table No: 9 ends here %%%%%%%%%%%%%%%%%%%%
 
@@ -359,10 +382,9 @@ Low, medium or high \\
 
 %%%%%%%%%%%%%%%%%%%% Table No: 10 starts here %%%%%%%%%%%%%%%%%%%%
 
-
 \begin{table}[H]
 \centering
-\begin{tabular}{p{0.15\linewidth}p{0.3\linewidth}p{0.15\linewidth}p{0.1\linewidth}p{0.13\linewidth}}
+\begin{tabular}{p{0.05\linewidth}p{0.45\linewidth}p{0.15\linewidth}p{0.1\linewidth}p{0.13\linewidth}}
 \hline
 %row no:1
 \multicolumn{5}{p{\linewidth}}{\textbf{Identify additional measures you could take to reduce or eliminate risks identified as medium or high risk in step 5}} \\
@@ -375,23 +397,52 @@ Low, medium or high \\
 \textbf{Measure approved} \\
 \hhline{-----}
 %row no:3
-h & 
-i & 
+1 & 
+Documentation such as the transparency note \cite{transparencynote} will inform users that the software should only be used to supplement human judgement.
+& 
+Reduced & 
+High & 
+Yes/no \\
+\hhline{-----}
+2 & 
+Developers and research staff will be trained to detect and minimise bias in models. & 
+Reduced & 
+Medium & 
+Yes/no \\
+\hhline{-----}
+3 & 
+Strict monitoring of employee interactions with the system will be in place to detect any occurrence of this event.
+Support staff will only be granted the least privilege required to complete the task requested by a customer.
+& 
 Eliminated reduced accepted & 
 Low medium high & 
 Yes/no \\
 \hhline{-----}
-
+4 & 
+Staff will be trained to be explicit about what information they require from customers to carry out a task. 
+Personal data will be censored or anonymized where possible. 
+For example, in emails.
+Before engaging with support staff, customers will be informed that they should not share any personal information during the communication that is not necessary to resolve their issue.
+& 
+Reduced & 
+Low & 
+Yes/no \\
+\hhline{-----}
+5 & 
+Service generated data will be anonymized or pseudonymized before being made visible to staff. 
+Any personal data that is not filtered by automated methods will be removed by other means.
+& 
+Reduced & 
+Low & 
+Yes/no \\
+\hhline{-----}
 \end{tabular}
- \end{table}
-
+\end{table}
 
 %%%%%%%%%%%%%%%%%%%% Table No: 10 ends here %%%%%%%%%%%%%%%%%%%%
 
 
-\vspace{\baselineskip}
 \section*{Step 7: Sign off and record outcomes}
-\addcontentsline{toc}{section}{Step 7: Sign off and record outcomes}
 
 
 %%%%%%%%%%%%%%%%%%%% Table No: 11 starts here %%%%%%%%%%%%%%%%%%%%
@@ -399,26 +450,26 @@ Yes/no \\
 
 \begin{table}[H]
  			\centering
-\begin{tabular}{p{1.84in}p{2.16in}p{2.33in}}
+\begin{tabular}{p{1.84in}p{1.8in}p{2.33in}}
 \hline
 %row no:1
 \multicolumn{1}{|p{1.84in}}{\textbf{Item }} & 
-\multicolumn{1}{|p{2.16in}}{\textbf{Name/position/date}} & 
+\multicolumn{1}{|p{1.8in}}{\textbf{Name/position/date}} & 
 \multicolumn{1}{|p{2.33in}|}{\textbf{Notes}} \\
 \hhline{---}
 %row no:2
 \multicolumn{1}{|p{1.84in}}{Measures approved by:} & 
-\multicolumn{1}{|p{2.16in}}{} & 
+\multicolumn{1}{|p{1.8in}}{} & 
 \multicolumn{1}{|p{2.33in}|}{{\fontsize{10pt}{12.0pt}\selectfont Integrate actions back into project plan, with date and responsibility for completion}} \\
 \hhline{---}
 %row no:3
 \multicolumn{1}{|p{1.84in}}{Residual risks approved by:} & 
-\multicolumn{1}{|p{2.16in}}{} & 
+\multicolumn{1}{|p{1.8in}}{} & 
 \multicolumn{1}{|p{2.33in}|}{{\fontsize{10pt}{12.0pt}\selectfont If accepting any residual high risk, consult the ICO before going ahead}} \\
 \hhline{---}
 %row no:4
 \multicolumn{1}{|p{1.84in}}{DPO advice provided:} & 
-\multicolumn{1}{|p{2.16in}}{} & 
+\multicolumn{1}{|p{1.8in}}{} & 
 \multicolumn{1}{|p{2.33in}|}{{\fontsize{10pt}{12.0pt}\selectfont DPO should advise on compliance, step 6 measures and whether processing can proceed}} \\
 \hhline{---}
 %row no:5
@@ -426,7 +477,7 @@ Yes/no \\
 \hhline{---}
 %row no:6
 \multicolumn{1}{|p{1.84in}}{DPO advice accepted or overruled by:} & 
-\multicolumn{1}{|p{2.16in}}{} & 
+\multicolumn{1}{|p{1.8in}}{} & 
 \multicolumn{1}{|p{2.33in}|}{{\fontsize{10pt}{12.0pt}\selectfont If overruled, you must explain your reasons}} \\
 \hhline{---}
 %row no:7
@@ -434,7 +485,7 @@ Yes/no \\
 \hhline{---}
 %row no:8
 \multicolumn{1}{|p{1.84in}}{Consultation responses reviewed by:} & 
-\multicolumn{1}{|p{2.16in}}{} & 
+\multicolumn{1}{|p{1.8in}}{} & 
 \multicolumn{1}{|p{2.33in}|}{{\fontsize{10pt}{12.0pt}\selectfont If your decision departs from individuals’ views, you must explain your reasons}} \\
 \hhline{---}
 %row no:9
@@ -442,16 +493,13 @@ Yes/no \\
 \hhline{---}
 %row no:10
 \multicolumn{1}{|p{1.84in}}{This DPIA will kept under review by:} & 
-\multicolumn{1}{|p{2.16in}}{} & 
+\multicolumn{1}{|p{1.8in}}{} & 
 \multicolumn{1}{|p{2.33in}|}{{\fontsize{10pt}{12.0pt}\selectfont The DPO should also review ongoing compliance with DPIA}} \\
 \hhline{---}
 
 \end{tabular}
  \end{table}
 \part{Critical Assessment}
-
-% TODO forgot to consider initial training set use to develop algorithm
-% Where does this data come from etc etc 
 
 % what to do about general purpose storage solutions? 
 % doesn't help draw the line between interconnected services (i.e. do I need to talk about the billing service here?)

@@ -2020,6 +2020,7 @@
     <bcf:citekey order="23">icolawfulbasis</bcf:citekey>
     <bcf:citekey order="24">featurecreep</bcf:citekey>
     <bcf:citekey order="25">transparencynote</bcf:citekey>
+    <bcf:citekey order="26">transparencynote</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
