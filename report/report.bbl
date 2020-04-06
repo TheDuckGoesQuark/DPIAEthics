@@ -411,6 +411,19 @@
       \verb https://blogs.microsoft.com/on-the-issues/2018/07/13/facial-recognition-technology-the-need-for-public-regulation-and-corporate-responsibility/
       \endverb
     \endentry
+    \entry{icodpia}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ICO}
+      \field{title}{How do we do a DPIA?}
+      \verb{urlraw}
+      \verb https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/data-protection-impact-assessments-dpias/how-do-we-do-a-dpia/#how8
+      \endverb
+      \verb{url}
+      \verb https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/data-protection-impact-assessments-dpias/how-do-we-do-a-dpia/#how8
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
