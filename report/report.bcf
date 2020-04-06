@@ -2011,9 +2011,15 @@
     <bcf:citekey order="14">police</bcf:citekey>
     <bcf:citekey order="15">nist</bcf:citekey>
     <bcf:citekey order="16">engineersurvey</bcf:citekey>
-    <bcf:citekey order="17">Buolamwini2018GenderSI</bcf:citekey>
-    <bcf:citekey order="18">microsoftontheissues_2018</bcf:citekey>
-    <bcf:citekey order="19">icodpia</bcf:citekey>
+    <bcf:citekey order="17">timeforaction</bcf:citekey>
+    <bcf:citekey order="18">Buolamwini2018GenderSI</bcf:citekey>
+    <bcf:citekey order="19">microsoftcerts</bcf:citekey>
+    <bcf:citekey order="20">microsoftontheissues_2018</bcf:citekey>
+    <bcf:citekey order="21">icodpia</bcf:citekey>
+    <bcf:citekey order="22">transparencynote</bcf:citekey>
+    <bcf:citekey order="23">icolawfulbasis</bcf:citekey>
+    <bcf:citekey order="24">featurecreep</bcf:citekey>
+    <bcf:citekey order="25">transparencynote</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

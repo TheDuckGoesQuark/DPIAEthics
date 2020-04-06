@@ -223,8 +223,13 @@ The difficulty of these evaluations have also increased over time as the technol
 
 \paragraph{Are there any current issues of public concern that you should factor in}
 The main public concerns towards facial recognition technology are that of privacy violations and accuracy of the algorithms \cite{engineersurvey}. 
-There have also been issues with bias in models. 
+There have also been issues with bias in models which can potentially result in the violation of laws regarding discrimination \cite{timeforaction}. 
 For example, the software often works better for white men than other groups \cite{Buolamwini2018GenderSI}. 
+Widespread usage of facial recognition technology could also have ramifications for democratic freedoms if coupled with mass surveillance by governments.
+
+\paragraph{Are you signed up to any approved code of conduct or certification scheme (once any have been approved)} Microsoft Azure has more compliance certifications than any other cloud service provider. 
+The list can be found at \cite{microsoftcerts}.
+
 
 %%%%%%%%%%%%%%%%%%%% Table No: 5 ends here %%%%%%%%%%%%%%%%%%%% 
 
@@ -269,6 +274,7 @@ Since the project will collect the personal data of individuals not yet identifi
 
 \paragraph{Who else do you need to involve within your organisation}
 Developers of the service and security experts employed by Microsoft will be involved to ensure that the privacy and security requirements required by this project are possible and will be delivered.
+In the documentation for the project, the controller also encourage any users of the service to provide proactive and reactive communication to stakeholder concerns and feedback \cite{transparencynote}.
 
 %%%%%%%%%%%%%%%%%%%% Table No: 7 ends here %%%%%%%%%%%%%%%%%%%%
 
@@ -290,14 +296,38 @@ Developers of the service and security experts employed by Microsoft will be inv
  \end{table}
 
 \paragraph{What is your lawful basis for processing}
+Our lawful basis for processing is consent, as the individual using our service has given clear consent for the controller to process their personal data for a specific purpose \cite{icolawfulbasis}.
+It is dependent on the individuals using our service to provide a lawful basis for processing if the data being provided to our service is not theirs.
+
 \paragraph{Does the processing actually achieve your purpose}
+The project has proven to be able to create working models capable of providing all the advertised functionality.
+Face detection and matching of faces in different images work reliably.
+Attribute detection such as determining emotion and sex detection are currently not as a accurate as the other features of the project, but this is made clear in documentation.
+
 \paragraph{Is there another way to achieve the same outcome}
-\paragraph{How will you prevent function creep?}
+It is not possible to perform automated facial recognition without processing images of faces.
+The task could be performed manually by humans, but this would be far more time intensive and likely more error prone.
+
+\paragraph{How will you prevent function creep}
+As advised by the ICO, Microsoft will regularly review the processing being performed by the Face API \cite{featurecreep}. 
+Documentation and privacy information will also be reviewed to ensure that the purpose of the project has not changed with time.
+
 \paragraph{How will you ensure data quality and data minimisation}
+Customer data that is used directly for face recognition will require the user to ensure data quality and minimisation, as Microsoft will not have any access to this data when it is persisted using the service.
+To ensure data minimisation is exercised, data usage will also be regularly reviewed. 
+Any data that users request is deleted will be done so immediately.
+
 \paragraph{What information will you give individuals}
+Documentation will be made available to all users of the service describing how and what data is processed by the service. 
+Guidance will also be provided to help users of the service deploy it responsibly in their own software.
+This will include guidance regarding how to help the software produce accurate results, and how to ensure their own usage of the software is compliant with regulations \cite{transparencynote}.
+
 \paragraph{How will you help to support their rights}
+
 \paragraph{What measures do you take to ensure processors comply}
+
 \paragraph{How do you safeguard any international transfers}
+
 
 %%%%%%%%%%%%%%%%%%%% Table No: 8 ends here %%%%%%%%%%%%%%%%%%%%
 
@@ -427,6 +457,9 @@ Developers of the service and security experts employed by Microsoft will be inv
 \end{tabular}
  \end{table}
 \part{Critical Assessment}
+
+% TODO forgot to consider initial training set use to develop algorithm
+% Where does this data come from etc etc 
 
 % what to do about general purpose storage solutions? 
 % doesn't help draw the line between interconnected services (i.e. do I need to talk about the billing service here?)

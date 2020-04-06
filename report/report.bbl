@@ -81,6 +81,7 @@
       \strng{authorbibnamehash}{f7fe334aa231dbccecab8d214d16f03b}
       \strng{authornamehash}{f7fe334aa231dbccecab8d214d16f03b}
       \strng{authorfullhash}{f7fe334aa231dbccecab8d214d16f03b}
+      \field{extraname}{1}
       \field{sortinit}{4}
       \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
@@ -369,6 +370,21 @@
       \verb https://www.theengineer.co.uk/poll-facial-recognition-uk/
       \endverb
     \endentry
+    \entry{timeforaction}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Microsoft on the Issues}
+      \field{month}{12}
+      \field{title}{Facial recognition: It's time for action}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://blogs.microsoft.com/on-the-issues/2018/12/06/facial-recognition-its-time-for-action/
+      \endverb
+      \verb{url}
+      \verb https://blogs.microsoft.com/on-the-issues/2018/12/06/facial-recognition-its-time-for-action/
+      \endverb
+    \endentry
     \entry{Buolamwini2018GenderSI}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=694238e772e190a6c1c2e0c1e68ee000}{%
@@ -396,9 +412,35 @@
       \field{title}{Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification}
       \field{year}{2018}
     \endentry
-    \entry{microsoftontheissues_2018}{misc}{}
+    \entry{microsoftcerts}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f7fe334aa231dbccecab8d214d16f03b}{%
+           family={Robmazz},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{f7fe334aa231dbccecab8d214d16f03b}
+      \strng{fullhash}{f7fe334aa231dbccecab8d214d16f03b}
+      \strng{bibnamehash}{f7fe334aa231dbccecab8d214d16f03b}
+      \strng{authorbibnamehash}{f7fe334aa231dbccecab8d214d16f03b}
+      \strng{authornamehash}{f7fe334aa231dbccecab8d214d16f03b}
+      \strng{authorfullhash}{f7fe334aa231dbccecab8d214d16f03b}
+      \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Microsoft Compliance | Microsoft Docs}
+      \field{title}{Microsoft compliance offerings - Microsoft Compliance}
+      \verb{urlraw}
+      \verb https://docs.microsoft.com/en-gb/microsoft-365/compliance/offering-home?view=o365-worldwide
+      \endverb
+      \verb{url}
+      \verb https://docs.microsoft.com/en-gb/microsoft-365/compliance/offering-home?view=o365-worldwide
+      \endverb
+    \endentry
+    \entry{microsoftontheissues_2018}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Microsoft on the Issues}
       \field{month}{7}
@@ -412,8 +454,8 @@
       \endverb
     \endentry
     \entry{icodpia}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ICO}
       \field{title}{How do we do a DPIA?}
@@ -422,6 +464,45 @@
       \endverb
       \verb{url}
       \verb https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/data-protection-impact-assessments-dpias/how-do-we-do-a-dpia/#how8
+      \endverb
+    \endentry
+    \entry{transparencynote}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Microsoft Azure Cloud Computing Platform & Services}
+      \field{title}{Transparency Note: Azure Cognitive Services Face API}
+      \verb{urlraw}
+      \verb https://azure.microsoft.com/en-gb/resources/transparency-note-azure-cognitive-services-face-api/
+      \endverb
+      \verb{url}
+      \verb https://azure.microsoft.com/en-gb/resources/transparency-note-azure-cognitive-services-face-api/
+      \endverb
+    \endentry
+    \entry{icolawfulbasis}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ICO}
+      \field{title}{Lawful basis for processing}
+      \verb{urlraw}
+      \verb https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/lawful-basis-for-processing/
+      \endverb
+      \verb{url}
+      \verb https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/lawful-basis-for-processing/
+      \endverb
+    \endentry
+    \entry{featurecreep}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ICO}
+      \field{title}{Principle (b): Purpose limitation}
+      \verb{urlraw}
+      \verb https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/principles/purpose-limitation/
+      \endverb
+      \verb{url}
+      \verb https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/principles/purpose-limitation/
       \endverb
     \endentry
   \enddatalist
