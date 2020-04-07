@@ -173,7 +173,7 @@ Customer data is only collected when explicitly provided by the customer.
 Processed face images for identification purposes are kept for 24 hours unless deleted by the user. Persisted faces used for model training are retained until deleted by the user.
 
 \paragraph{How many individuals are affected}
-The number of individuals affected corresponds to the the number of people and faces submitted to the service, as well as the number of users of the service. 
+The number of individuals affected corresponds to the number of people and faces submitted to the service, as well as the number of users of the service. 
 Both are potentially limitless.
 
 \paragraph{What geographical area does it cover}
@@ -498,12 +498,70 @@ Yes/no \\
 \hhline{---}
 
 \end{tabular}
- \end{table}
+\end{table}
+
+% 3505
+% Max: 5500
+
 \part{Critical Assessment}
 
-% what to do about general purpose storage solutions? 
-% doesn't help draw the line between interconnected services (i.e. do I need to talk about the billing service here?)
-% what exactly is novel?
+\section{Introduction}
+
+Microsoft's Face API is part of its family of Azure Cognitive Services. 
+These are general purpose artificial intelligence services that allow other developers to utilise the technology without having to understand and design models and algorithms themselves. 
+Completing the DPIA for the Face API specifically felt unsatisfying because of its 'software-as-a-service nature.
+
+To measure what was unsatisfactory about using the DPIA, the Cigref code of ethics \cite{cigref} will be compared to the Microsoft's \cite{timeforaction}. The former was chosen as it includes a discussion of duty-based ethics, which it could be argued that the DPIA fails to cover. The latter allows us to discuss if Microsoft themselves have recognised any form of duty-based ethics.
+
+\subsection{Cigref}
+
+\paragraph{Ethics by Design}
+
+The Cigref code of ethics provides multiple preliminary questions to help ensure ethics by design. 
+One such question is ``Are solutions designers representative of the social and gender diversity of society''. 
+In our case study, this could be important as a lack of representation of minorities and disadvantages groups may result in issues such as bias being taken less seriously. 
+From Microsoft's diversity reports \cite{diversity}, there is definitely an effort being made to minimise this issue.
+They also recognise that this remains an issue with their own facial recognition services, and are continuing to improve upon them.
+The DPIA and ICO guidance does not place a strict measure on `how much' bias is acceptable, allowing controllers to deploy their technology without much consideration for bias. 
+
+Despite Microsoft's code of ethics agreeing with this need to avoid technology resulting in unlawful discrimination, they have deployed their facial recognition software regardless. 
+It could be argued that they should not have made the software available until the bias present in their models was greatly reduced.
+Microsoft followed the DPIA guidance of seeking feedback from stakeholders and individuals that would be affected by the system and regularly discuss with authorities how to best regulate the technology. 
+Their own code of ethics even highlights a need for this regulation to mature before the technology should be fully deployed, while making the technology widely available to be abused without regulation.
+This is a clear case of ethics washing, which the DPIA has failed to prevent.
+
+On the other hand, the DPIA enforces protection of privacy and personal data well. The case study exemplifies this. 
+The Face API includes methods for deleting any data that users are able to submit to the service.
+The thorough approach to the deletion of data on physical hardware satisfies the right to be forgotten which is required by the Cigref code of ethics and GDPR.
+
+\paragraph{Ethics of Use}
+The DPIA includes support for the concept of `joint controllers' \cite{controllers}. 
+For example, an organisation that produces a piece of software which uses Microsoft's Face API could be considered joint controllers with Microsoft. 
+The ICO guidance states that joint controllers must arrange between themselves who will take primary responsibility for ensuring GDPR compliance. 
+Individuals and authorities can take action against any controller if compliance is breached. 
+This could be a considered an implementation of Cigrefs preliminary question regarding partnership ethics: 
+\begin{quote}
+    \centering
+    Is there a policy allowing you to check, when digital solutions are built by a number of partners, that the whole process is ethical?
+\end{quote} 
+Microsoft emphasise in their own DPIA guidance that they have no control over what data their service is used to store, and that "it is incumbent upon the data controller to determine appropriate use of the data controller's data" \cite{robmazz}.
+There is no review process performed by Microsoft to ensure that those utilising their services are exercising appropriate processing either, therefore their approach to partnership ethics is very one directional.
+
+\paragraph{Societal Ethics}
+
+Cigref's societal ethics considers the environmental, societal, and economic impact of a technology. 
+The DPIA only requires a consideration of the societal effect that a technology could have.
+Therefore, a project that requires a large amount of servers will not be prompted to consider how they could minimise or offset the carbon footprint produced through power consumption.
+The automation of tasks can have extreme effects on the availability of jobs, and our case study is no exception.
+Microsoft insist that technology should be used to supplement not replace human processing in their code of ethics, and Cigref also ask that an assessment be carried out to determine the impact of innovations on jobs.
+The DPIA does not require this kind of analysis.
+
+\section{Conclusion}
+
+The DPIA is effective at forcing data controllers to comply with some aspects of the Cigref code of ethics.
+
+% TODO 
+% 677
 
 \printbibliography
 

@@ -1,34 +1,36 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
-[0] Config.pm:307> INFO - Logfile is 'report.blg'
-[33] biber:315> INFO - === Mon Apr  6, 2020, 21:21:58
-[49] Biber.pm:371> INFO - Reading 'report.bcf'
-[90] Biber.pm:889> INFO - Found 24 citekeys in bib section 0
-[98] Biber.pm:4093> INFO - Processing section 0
-[106] Biber.pm:4254> INFO - Looking for bibtex format file 'mybib.bib' for section 0
-[107] bibtex.pm:1512> INFO - LaTeX decoding ...
-[121] bibtex.pm:1329> INFO - Found BibTeX data source 'mybib.bib'
-[123] Utils.pm:193> WARN - month field 'Oct' in entry 'facefirst' is not an integer - this will probably not sort properly.
-[135] Utils.pm:193> WARN - month field 'Sep' in entry 'vollmer_2018' is not an integer - this will probably not sort properly.
-[138] Utils.pm:193> WARN - month field 'May' in entry 'firstface' is not an integer - this will probably not sort properly.
-[140] Utils.pm:193> WARN - month field 'Feb' in entry 'police' is not an integer - this will probably not sort properly.
-[142] Utils.pm:193> WARN - month field 'Apr' in entry 'nist' is not an integer - this will probably not sort properly.
-[144] Utils.pm:193> WARN - month field 'Mar' in entry 'engineersurvey' is not an integer - this will probably not sort properly.
-[145] Utils.pm:193> WARN - month field 'Dec' in entry 'timeforaction' is not an integer - this will probably not sort properly.
-[150] Utils.pm:193> WARN - month field 'Jul' in entry 'microsoftontheissues_2018' is not an integer - this will probably not sort properly.
-[151] Utils.pm:193> WARN - BibTeX subsystem: /tmp/SJEkwgk7Jq/mybib.bib_9430.utf8, line 7, warning: 45 characters of junk seen at toplevel
-[151] Utils.pm:193> WARN - BibTeX subsystem: /tmp/SJEkwgk7Jq/mybib.bib_9430.utf8, line 15, warning: 1 characters of junk seen at toplevel
-[151] Utils.pm:193> WARN - BibTeX subsystem: /tmp/SJEkwgk7Jq/mybib.bib_9430.utf8, line 23, warning: 1 characters of junk seen at toplevel
-[151] Utils.pm:193> WARN - BibTeX subsystem: /tmp/SJEkwgk7Jq/mybib.bib_9430.utf8, line 28, warning: 1 characters of junk seen at toplevel
-[151] Utils.pm:193> WARN - BibTeX subsystem: /tmp/SJEkwgk7Jq/mybib.bib_9430.utf8, line 30, warning: 1 characters of junk seen at toplevel
-[152] Utils.pm:193> WARN - BibTeX subsystem: /tmp/SJEkwgk7Jq/mybib.bib_9430.utf8, line 32, warning: 1 characters of junk seen at toplevel
-[152] Utils.pm:193> WARN - BibTeX subsystem: /tmp/SJEkwgk7Jq/mybib.bib_9430.utf8, line 38, warning: 1 characters of junk seen at toplevel
-[152] Utils.pm:193> WARN - BibTeX subsystem: /tmp/SJEkwgk7Jq/mybib.bib_9430.utf8, line 40, warning: 1 characters of junk seen at toplevel
-[152] Utils.pm:193> WARN - BibTeX subsystem: /tmp/SJEkwgk7Jq/mybib.bib_9430.utf8, line 62, warning: 1 characters of junk seen at toplevel
-[152] Utils.pm:193> WARN - BibTeX subsystem: /tmp/SJEkwgk7Jq/mybib.bib_9430.utf8, line 69, warning: 1 characters of junk seen at toplevel
-[163] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[163] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[163] Biber.pm:3921> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[164] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
-[174] bbl.pm:636> INFO - Writing 'report.bbl' with encoding 'UTF-8'
-[178] bbl.pm:739> INFO - Output to report.bbl
-[179] Biber.pm:110> INFO - WARNINGS: 18
+[1] Config.pm:307> INFO - Logfile is 'report.blg'
+[32] biber:315> INFO - === Tue Apr  7, 2020, 20:30:41
+[54] Biber.pm:371> INFO - Reading 'report.bcf'
+[116] Biber.pm:889> INFO - Found 27 citekeys in bib section 0
+[128] Biber.pm:4093> INFO - Processing section 0
+[137] Biber.pm:4254> INFO - Looking for bibtex format file 'mybib.bib' for section 0
+[139] bibtex.pm:1512> INFO - LaTeX decoding ...
+[161] bibtex.pm:1329> INFO - Found BibTeX data source 'mybib.bib'
+[164] Utils.pm:193> WARN - month field 'Oct' in entry 'facefirst' is not an integer - this will probably not sort properly.
+[183] Utils.pm:193> WARN - month field 'Sep' in entry 'vollmer_2018' is not an integer - this will probably not sort properly.
+[187] Utils.pm:193> WARN - month field 'May' in entry 'firstface' is not an integer - this will probably not sort properly.
+[190] Utils.pm:193> WARN - month field 'Feb' in entry 'police' is not an integer - this will probably not sort properly.
+[194] Utils.pm:193> WARN - month field 'Apr' in entry 'nist' is not an integer - this will probably not sort properly.
+[198] Utils.pm:193> WARN - month field 'Mar' in entry 'engineersurvey' is not an integer - this will probably not sort properly.
+[199] Utils.pm:193> WARN - month field 'Dec' in entry 'timeforaction' is not an integer - this will probably not sort properly.
+[208] Utils.pm:193> WARN - month field 'Jul' in entry 'microsoftontheissues_2018' is not an integer - this will probably not sort properly.
+[210] Utils.pm:193> WARN - month field 'October' in entry 'cigref' is not an integer - this will probably not sort properly.
+[211] Utils.pm:193> WARN - BibTeX subsystem: /tmp/56EXlN8ueW/mybib.bib_28747.utf8, line 7, warning: 45 characters of junk seen at toplevel
+[212] Utils.pm:193> WARN - BibTeX subsystem: /tmp/56EXlN8ueW/mybib.bib_28747.utf8, line 15, warning: 1 characters of junk seen at toplevel
+[212] Utils.pm:193> WARN - BibTeX subsystem: /tmp/56EXlN8ueW/mybib.bib_28747.utf8, line 23, warning: 1 characters of junk seen at toplevel
+[212] Utils.pm:193> WARN - BibTeX subsystem: /tmp/56EXlN8ueW/mybib.bib_28747.utf8, line 28, warning: 1 characters of junk seen at toplevel
+[212] Utils.pm:193> WARN - BibTeX subsystem: /tmp/56EXlN8ueW/mybib.bib_28747.utf8, line 30, warning: 1 characters of junk seen at toplevel
+[212] Utils.pm:193> WARN - BibTeX subsystem: /tmp/56EXlN8ueW/mybib.bib_28747.utf8, line 32, warning: 1 characters of junk seen at toplevel
+[212] Utils.pm:193> WARN - BibTeX subsystem: /tmp/56EXlN8ueW/mybib.bib_28747.utf8, line 38, warning: 1 characters of junk seen at toplevel
+[212] Utils.pm:193> WARN - BibTeX subsystem: /tmp/56EXlN8ueW/mybib.bib_28747.utf8, line 40, warning: 1 characters of junk seen at toplevel
+[212] Utils.pm:193> WARN - BibTeX subsystem: /tmp/56EXlN8ueW/mybib.bib_28747.utf8, line 62, warning: 1 characters of junk seen at toplevel
+[213] Utils.pm:193> WARN - BibTeX subsystem: /tmp/56EXlN8ueW/mybib.bib_28747.utf8, line 69, warning: 1 characters of junk seen at toplevel
+[213] Utils.pm:193> WARN - BibTeX subsystem: /tmp/56EXlN8ueW/mybib.bib_28747.utf8, line 93, warning: 1 characters of junk seen at toplevel
+[232] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[232] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[232] Biber.pm:3921> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[232] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[249] bbl.pm:636> INFO - Writing 'report.bbl' with encoding 'UTF-8'
+[258] bbl.pm:739> INFO - Output to report.bbl
+[258] Biber.pm:110> INFO - WARNINGS: 20

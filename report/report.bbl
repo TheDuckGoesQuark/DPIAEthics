@@ -505,6 +505,50 @@
       \verb https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/principles/purpose-limitation/
       \endverb
     \endentry
+    \entry{cigref}{report}{}
+      \list{institution}{1}{%
+        {CIGREF}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{Digital Ethics: A guide for professionals of the digital age}
+      \field{type}{techreport}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.cigref.fr/wp/wp-content/uploads/2019/02/Cigref-Syntec-Digital-Ethics-Guide-for-Professionals-of-Digital-Age-2018-October-EN.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.cigref.fr/wp/wp-content/uploads/2019/02/Cigref-Syntec-Digital-Ethics-Guide-for-Professionals-of-Digital-Age-2018-October-EN.pdf
+      \endverb
+    \endentry
+    \entry{diversity}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Microsoft}
+      \field{title}{Inside Microsoft}
+      \verb{urlraw}
+      \verb https://www.microsoft.com/en-us/diversity/inside-microsoft/default.aspx
+      \endverb
+      \verb{url}
+      \verb https://www.microsoft.com/en-us/diversity/inside-microsoft/default.aspx
+      \endverb
+    \endentry
+    \entry{controllers}{misc}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ICO}
+      \field{title}{Controllers and processors}
+      \verb{urlraw}
+      \verb https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/key-definitions/controllers-and-processors/
+      \endverb
+      \verb{url}
+      \verb https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/key-definitions/controllers-and-processors/
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

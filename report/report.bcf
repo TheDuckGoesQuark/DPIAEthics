@@ -2021,6 +2021,11 @@
     <bcf:citekey order="24">featurecreep</bcf:citekey>
     <bcf:citekey order="25">transparencynote</bcf:citekey>
     <bcf:citekey order="26">transparencynote</bcf:citekey>
+    <bcf:citekey order="27">cigref</bcf:citekey>
+    <bcf:citekey order="28">timeforaction</bcf:citekey>
+    <bcf:citekey order="29">diversity</bcf:citekey>
+    <bcf:citekey order="30">controllers</bcf:citekey>
+    <bcf:citekey order="31">robmazz</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
