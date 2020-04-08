@@ -201,6 +201,7 @@
       \strng{authorbibnamehash}{cbe9643e20873f1529b7c9d944a1a966}
       \strng{authornamehash}{cbe9643e20873f1529b7c9d944a1a966}
       \strng{authorfullhash}{cbe9643e20873f1529b7c9d944a1a966}
+      \field{extraname}{1}
       \field{sortinit}{9}
       \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labelnamesource}{author}
@@ -547,6 +548,130 @@
       \endverb
       \verb{url}
       \verb https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/key-definitions/controllers-and-processors/
+      \endverb
+    \endentry
+    \entry{raab}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=6bb8d51c597380ced766688659bdc7a1}{%
+           family={Hijmans},
+           familyi={H\bibinitperiod},
+           given={Hielke},
+           giveni={H\bibinitperiod}}}%
+        {{hash=01ff76558663067af4385dad6d1f0d02}{%
+           family={Raab},
+           familyi={R\bibinitperiod},
+           given={Charles\bibnamedelima D.},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{f2ff23a24aa51aeb6d191c6887c9e2ee}
+      \strng{fullhash}{f2ff23a24aa51aeb6d191c6887c9e2ee}
+      \strng{bibnamehash}{f2ff23a24aa51aeb6d191c6887c9e2ee}
+      \strng{authorbibnamehash}{f2ff23a24aa51aeb6d191c6887c9e2ee}
+      \strng{authornamehash}{f2ff23a24aa51aeb6d191c6887c9e2ee}
+      \strng{authorfullhash}{f2ff23a24aa51aeb6d191c6887c9e2ee}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{title}{Ethical Dimensions of the GDPR}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3222677
+      \endverb
+      \verb{url}
+      \verb https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3222677
+      \endverb
+    \endentry
+    \entry{recital4}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=cbe9643e20873f1529b7c9d944a1a966}{%
+           family={Vollmer},
+           familyi={V\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SecureDataService}%
+      }
+      \strng{namehash}{cbe9643e20873f1529b7c9d944a1a966}
+      \strng{fullhash}{cbe9643e20873f1529b7c9d944a1a966}
+      \strng{bibnamehash}{cbe9643e20873f1529b7c9d944a1a966}
+      \strng{authorbibnamehash}{cbe9643e20873f1529b7c9d944a1a966}
+      \strng{authornamehash}{cbe9643e20873f1529b7c9d944a1a966}
+      \strng{authorfullhash}{cbe9643e20873f1529b7c9d944a1a966}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Recital 4 EU General Data Protection Regulation (EU-GDPR). Privacy/Privazy according to plan.}
+      \field{month}{9}
+      \field{title}{Recital 4 EU General Data Protection Regulation (EU-GDPR)}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.privacy-regulation.eu/en/recital-4-GDPR.htm
+      \endverb
+      \verb{url}
+      \verb https://www.privacy-regulation.eu/en/recital-4-GDPR.htm
+      \endverb
+    \endentry
+    \entry{villani}{book}{}
+      \name{author}{7}{}{%
+        {{hash=9a5829eabef68d560b86bf71527fd874}{%
+           family={Villani},
+           familyi={V\bibinitperiod},
+           given={Cédric},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8db29f6587badffb4797659c16105f20}{%
+           family={Schoenauer},
+           familyi={S\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=55ac611ae327adbab6e6acc832ff85f0}{%
+           family={Bonnet},
+           familyi={B\bibinitperiod},
+           given={Yann},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=88425cf79dc4dcc5b7cdf3aa40402aad}{%
+           family={Berthet},
+           familyi={B\bibinitperiod},
+           given={Charly},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7e6c3f8fbdd108487699da007b421977}{%
+           family={Cornut},
+           familyi={C\bibinitperiod},
+           given={Anne-Charlotte},
+           giveni={A\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=c612369e6169b1ee0563788b2b4efab5}{%
+           family={Levin},
+           familyi={L\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod}}}%
+        {{hash=b5104d5bfee1a731b316a2e647215cfe}{%
+           family={Rondepierre},
+           familyi={R\bibinitperiod},
+           given={Bertrand},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{6284a700076f8049b05b5a174309c6d3}
+      \strng{fullhash}{2183866c4a03ea2a71c48b9b771bf4f0}
+      \strng{bibnamehash}{6284a700076f8049b05b5a174309c6d3}
+      \strng{authorbibnamehash}{6284a700076f8049b05b5a174309c6d3}
+      \strng{authornamehash}{6284a700076f8049b05b5a174309c6d3}
+      \strng{authorfullhash}{2183866c4a03ea2a71c48b9b771bf4f0}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{03}
+      \field{title}{Donner un sens à l'intelligence artificielle : Pour une stratégie nationale et européenne}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.aiforhumanity.fr/pdfs/MissionVillani_Report_ENG-VF.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.aiforhumanity.fr/pdfs/MissionVillani_Report_ENG-VF.pdf
       \endverb
     \endentry
   \enddatalist
